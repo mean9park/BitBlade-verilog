@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : BitBlade
+Version: N-2017.09-SP3
+Date   : Mon Oct 18 21:46:08 2021
+****************************************
+
+Library(s) Used:
+
+    saed32hvt_ss0p95v125c (File: /home/espanol/libraries/SAED32_EDK_01132015/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
+
+Number of ports:                         9214
+Number of nets:                        191212
+Number of cells:                       142314
+Number of combinational cells:         130250
+Number of sequential cells:             12064
+Number of macros/black boxes:               0
+Number of buf/inv:                       4764
+Number of references:                      38
+
+Combinational area:             375227.601979
+Buf/Inv area:                     6691.357468
+Noncombinational area:           79735.141173
+Macro/Black Box area:                0.000000
+Net Interconnect area:          243796.004122
+
+Total cell area:                454962.743152
+Total area:                     698758.747274
+1
