@@ -21,28 +21,23 @@ sh rm -rf ./WORK
 define_design_lib WORK -path WORK
 
 set SOURCE_FILES {
-    ./HA.v
-    ./FA.v
-	./ACC_Shift.v
-	./ACC_register.v
-	./accumulator.v
-	./BitBlade_column.v
-	./bitbrick.v
-	./Buffer_32bit.v
-	./Input_MUX_REG.v
-	./Input_wire_packing.v
-	./PE_adder.v
-	./PE_register.v
-	./PE_shift.v
-	./PE.v
-	./signed3bit_MUL.v
-	./top.v
-	./Weight_MUX_REG.v
-	./Weight_wire_packing.v
+    ./BitBlade_column.v
+    ./Buffer_32bit.v
+    ./bitbrick.v
+    ./PE.v
+    ./PE_register.v
+    ./PE_shift.v
+    ./PE_adder.v
+    ./signed3bit_MUL.v
+    ./ACC_Shift.v
+    ./ACC_register.v
+    ./accumulator.v
+    ./Weight_wire_packing.v
+    ./Weight_MUX_REG.v
 }
 
 analyze -format verilog $SOURCE_FILES -library WORK
-elaborate BitBlade
+elaborate BitBlade_column
 
 set reports_dir reports
 set final_reports_dir final_reports
@@ -59,7 +54,7 @@ if { ! [ file exists $design_dir] } {
 }
 
 # set current_design top
-# link
+link
 
 create_clock clk -period 3
 
@@ -68,14 +63,13 @@ ungroup -all -flatten
 compile_ultra
 #compile
 
+report_timing > $final_reports_dir/column_timing.txt
+sh cat $final_reports_dir/column_timing.txt
 
-report_timing > $final_reports_dir/timing.txt
-sh cat $final_reports_dir/timing.txt
+report_area > $final_reports_dir/column_area.txt
+sh cat $final_reports_dir/column_area.txt
 
-report_area > $final_reports_dir/area.txt
-sh cat $final_reports_dir/area.txt
-
-report_power > $final_reports_dir/power.txt
-sh cat $final_reports_dir/power.txt
+report_power > $final_reports_dir/column_power.txt
+sh cat $final_reports_dir/column_power.txt
 
 #exit

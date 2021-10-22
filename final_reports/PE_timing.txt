@@ -1,0 +1,51 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : PE
+Version: N-2017.09-SP3
+Date   : Fri Oct 22 01:13:01 2021
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32hvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: x[23] (input port)
+  Endpoint: PE_sum[7] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE                 8000                  saed32hvt_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  x[23] (in)                               0.00       0.00 r
+  U73/Y (AND2X1_HVT)                       0.08       0.08 r
+  U74/Y (AND2X1_HVT)                       0.10       0.18 r
+  U75/Y (AND2X1_HVT)                       0.09       0.27 r
+  U277/CO (FADDX1_HVT)                     0.16       0.43 r
+  U113/CO (FADDX1_HVT)                     0.17       0.60 r
+  U110/Y (NAND3X0_HVT)                     0.11       0.71 f
+  U294/Y (OA221X1_HVT)                     0.15       0.86 f
+  intadd_10/U2/S (FADDX1_HVT)              0.22       1.08 r
+  intadd_4/U3/S (FADDX1_HVT)               0.24       1.32 f
+  intadd_3/U2/S (FADDX1_HVT)               0.20       1.52 r
+  intadd_0/U2/CO (FADDX1_HVT)              0.16       1.68 r
+  U70/Y (XOR2X1_HVT)                       0.17       1.85 f
+  U71/Y (XOR2X1_HVT)                       0.18       2.02 r
+  U72/Y (XOR2X1_HVT)                       0.17       2.20 f
+  U111/Y (XOR2X1_HVT)                      0.16       2.35 r
+  U112/Y (XOR2X1_HVT)                      0.16       2.51 f
+  PE_sum[7] (out)                          0.00       2.51 f
+  data arrival time                                   2.51
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
