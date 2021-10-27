@@ -1,5 +1,5 @@
 Information: Updating design information... (UID-85)
-Warning: Design 'BitBlade' contains 5 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Warning: Design 'BitBlade' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
  
 ****************************************
 Report : timing
@@ -8,7 +8,7 @@ Report : timing
         -max_paths 1
 Design : BitBlade
 Version: N-2017.09-SP3
-Date   : Mon Oct 18 21:46:08 2021
+Date   : Fri Oct 22 17:00:41 2021
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -16,9 +16,9 @@ Date   : Mon Oct 18 21:46:08 2021
 Operating Conditions: ss0p95v125c   Library: saed32hvt_ss0p95v125c
 Wire Load Model Mode: enclosed
 
-  Startpoint: Input_MUX_REG_3/sorted_data_reg[1]
+  Startpoint: Input_MUX_REG_16/sorted_data_reg[18]
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: BitBlade_column_9/PE_reg_1/PE_sum_out_reg[7]
+  Endpoint: BitBlade_column_9/PE_reg_10/PE_sum_out_reg[7]
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -31,38 +31,43 @@ Wire Load Model Mode: enclosed
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.00       0.00
-  Input_MUX_REG_3/sorted_data_reg[1]/CLK (DFFX1_HVT)      0.00 #     0.00 r
-  Input_MUX_REG_3/sorted_data_reg[1]/Q (DFFX1_HVT)        0.26       0.26 f
-  U47526/Y (AND2X1_HVT)                                   0.19       0.45 f
-  U47296/Y (NBUFFX2_HVT)                                  0.18       0.62 f
-  U86318/Y (NAND2X0_HVT)                                  0.12       0.74 r
-  U86340/CO (FADDX1_HVT)                                  0.19       0.93 r
-  U86342/CO (FADDX1_HVT)                                  0.17       1.10 r
-  U86350/CO (FADDX1_HVT)                                  0.17       1.27 r
-  U86362/S (FADDX1_HVT)                                   0.22       1.49 f
-  U86361/S (FADDX1_HVT)                                   0.21       1.70 r
-  U86359/S (FADDX1_HVT)                                   0.23       1.92 f
-  U86378/S (FADDX1_HVT)                                   0.21       2.13 r
-  U108993/CO (FADDX1_HVT)                                 0.15       2.28 r
-  U108995/CO (FADDX1_HVT)                                 0.15       2.43 r
-  U86394/S (FADDX1_HVT)                                   0.23       2.66 f
-  U46672/Y (XNOR2X1_HVT)                                  0.15       2.81 r
-  U86396/Y (AND2X1_HVT)                                   0.08       2.89 r
-  BitBlade_column_9/PE_reg_1/PE_sum_out_reg[7]/D (DFFX1_HVT)
-                                                          0.00       2.89 r
-  data arrival time                                                  2.89
+  Input_MUX_REG_16/sorted_data_reg[18]/CLK (DFFX1_HVT)
+                                                          0.00 #     0.00 r
+  Input_MUX_REG_16/sorted_data_reg[18]/Q (DFFX1_HVT)      0.19       0.19 r
+  U130409/Y (NAND2X0_HVT)                                 0.12       0.31 f
+  U119616/Y (INVX2_HVT)                                   0.12       0.43 r
+  U182298/Y (OAI221X1_HVT)                                0.22       0.65 f
+  U182299/Y (OA222X1_HVT)                                 0.15       0.80 f
+  U182300/Y (OA21X1_HVT)                                  0.10       0.89 f
+  U122195/Y (INVX0_HVT)                                   0.05       0.94 r
+  U182301/Y (AO222X1_HVT)                                 0.19       1.14 r
+  U182302/SO (HADDX1_HVT)                                 0.17       1.31 f
+  U182345/S (FADDX1_HVT)                                  0.21       1.51 r
+  U182553/S (FADDX1_HVT)                                  0.22       1.73 f
+  U182564/S (FADDX1_HVT)                                  0.20       1.94 r
+  U182599/CO (FADDX1_HVT)                                 0.14       2.08 r
+  U182597/CO (FADDX1_HVT)                                 0.15       2.22 r
+  U182565/Y (NAND2X0_HVT)                                 0.07       2.29 f
+  U182567/Y (NAND3X0_HVT)                                 0.06       2.36 r
+  U182584/CO (FADDX1_HVT)                                 0.14       2.50 r
+  U182594/CO (FADDX1_HVT)                                 0.15       2.65 r
+  U182592/S (FADDX1_HVT)                                  0.22       2.87 f
+  U182593/Y (AND2X1_HVT)                                  0.07       2.94 f
+  BitBlade_column_9/PE_reg_10/PE_sum_out_reg[7]/D (DFFX1_HVT)
+                                                          0.00       2.94 f
+  data arrival time                                                  2.94
 
   clock clk (rise edge)                                   3.00       3.00
   clock network delay (ideal)                             0.00       3.00
-  BitBlade_column_9/PE_reg_1/PE_sum_out_reg[7]/CLK (DFFX1_HVT)
+  BitBlade_column_9/PE_reg_10/PE_sum_out_reg[7]/CLK (DFFX1_HVT)
                                                           0.00       3.00 r
-  library setup time                                     -0.08       2.92
-  data required time                                                 2.92
+  library setup time                                     -0.06       2.94
+  data required time                                                 2.94
   --------------------------------------------------------------------------
-  data required time                                                 2.92
-  data arrival time                                                 -2.89
+  data required time                                                 2.94
+  data arrival time                                                 -2.94
   --------------------------------------------------------------------------
-  slack (MET)                                                        0.03
+  slack (MET)                                                        0.00
 
 
 1
