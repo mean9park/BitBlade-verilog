@@ -21,10 +21,10 @@ module BitBlade_column(
     output [27:0] total_output
 );
 
-    wire [7:0] PE_sum_1, PE_sum_2, PE_sum_3, PE_sum_4, PE_sum_5, PE_sum_6, PE_sum_7, PE_sum_8, 
+    wire [9:0] PE_sum_1, PE_sum_2, PE_sum_3, PE_sum_4, PE_sum_5, PE_sum_6, PE_sum_7, PE_sum_8, 
     PE_sum_9, PE_sum_10, PE_sum_11, PE_sum_12, PE_sum_13, PE_sum_14, PE_sum_15, PE_sum_16;
     
-    wire [7:0] PE_sum_out_1, PE_sum_out_2, PE_sum_out_3, PE_sum_out_4, PE_sum_out_5, PE_sum_out_6, PE_sum_out_7, PE_sum_out_8, 
+    wire [9:0] PE_sum_out_1, PE_sum_out_2, PE_sum_out_3, PE_sum_out_4, PE_sum_out_5, PE_sum_out_6, PE_sum_out_7, PE_sum_out_8, 
     PE_sum_out_9, PE_sum_out_10, PE_sum_out_11, PE_sum_out_12, PE_sum_out_13, PE_sum_out_14, PE_sum_out_15, PE_sum_out_16;  
     
     wire [19:0] shifted_PE_sum_1, shifted_PE_sum_2, shifted_PE_sum_3, shifted_PE_sum_4, shifted_PE_sum_5, shifted_PE_sum_6, shifted_PE_sum_7, shifted_PE_sum_8, 

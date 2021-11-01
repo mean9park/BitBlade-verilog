@@ -4,7 +4,7 @@ Report : power
         -analysis_effort low
 Design : BitBlade
 Version: N-2017.09-SP3
-Date   : Fri Oct 22 17:00:42 2021
+Date   : Fri Oct 29 20:35:57 2021
 ****************************************
 
 
@@ -30,12 +30,12 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  =  45.0380 mW   (85%)
-  Net Switching Power  =   8.1007 mW   (15%)
+  Cell Internal Power  =  46.0137 mW   (85%)
+  Net Switching Power  =   8.1359 mW   (15%)
                          ---------
-Total Dynamic Power    =  53.1387 mW  (100%)
+Total Dynamic Power    =  54.1496 mW  (100%)
 
-Cell Leakage Power     =   6.5789 mW
+Cell Leakage Power     =   6.7696 mW
 
 
                  Internal         Switching           Leakage            Total
@@ -45,9 +45,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register       2.7717e+04        1.0956e+03        1.7457e+09        3.0559e+04  (  51.17%)
+register       2.8840e+04        1.1362e+03        1.8193e+09        3.1795e+04  (  52.19%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational  1.7321e+04        7.0052e+03        4.8332e+09        2.9158e+04  (  48.83%)
+combinational  1.7174e+04        6.9999e+03        4.9503e+09        2.9125e+04  (  47.81%)
 --------------------------------------------------------------------------------------------------
-Total          4.5038e+04 uW     8.1009e+03 uW     6.5789e+09 pW     5.9717e+04 uW
+Total          4.6014e+04 uW     8.1361e+03 uW     6.7696e+09 pW     6.0920e+04 uW
 1

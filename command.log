@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version N-2017.09-SP3 for linux64 -- Jan 18, 2018
-#@ # Date:   Mon Oct 25 02:06:24 2021
+#@ # Date:   Mon Nov  1 01:05:16 2021
 #@ # Run by: espanol@friday
 #@ 
 
@@ -6687,6 +6687,9 @@ source -echo -verbose /home/espanol/RSSA_DC/bitblade/dc_bitblade.tcl
 #@ 	file mkdir $design_dir
 #@ }
 #@ 
+#@ # set_dont_touch (get_designs signed_3bit_MUL)
+#@ set_dont_touch (get_designs BitBlade)
+#@ 
 #@ # set current_design top
 #@ # link
 #@ 
@@ -6694,19 +6697,21 @@ source -echo -verbose /home/espanol/RSSA_DC/bitblade/dc_bitblade.tcl
 #@ 
 #@ ungroup -all -flatten
 #@ 
-#@ # compile_ultra
-#@ compile
+#@ compile_ultra
+#@ # compile
 #@ 
 #@ 
-#@ report_timing > $final_reports_dir/not_ultra_timing.txt
-#@ sh cat $final_reports_dir/not_ultra_timing.txt
+#@ report_timing > $final_reports_dir/not_touch_timing.txt
+#@ sh cat $final_reports_dir/not_touch_timing.txt
 #@ 
-#@ report_area > $final_reports_dir/not_ultra_area.txt
-#@ sh cat $final_reports_dir/not_ultra_area.txt
+#@ report_area > $final_reports_dir/not_touch_area.txt
+#@ sh cat $final_reports_dir/not_touch_area.txt
 #@ 
-#@ report_power > $final_reports_dir/not_ultra_power.txt
-#@ sh cat $final_reports_dir/not_ultra_power.txt
+#@ report_power > $final_reports_dir/not_touch_power.txt
+#@ sh cat $final_reports_dir/not_touch_power.txt
 #@ 
 #@ #exit
 #@ # -- End source /home/espanol/RSSA_DC/bitblade/dc_bitblade.tcl
+
+- End source /home/espanol/RSSA_DC/bitblade/dc_bitblade.tcl
 

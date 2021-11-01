@@ -8,7 +8,7 @@ Report : power
         -analysis_effort low
 Design : BitBlade
 Version: N-2017.09-SP3
-Date   : Mon Oct 25 02:24:38 2021
+Date   : Mon Nov  1 01:17:47 2021
 ****************************************
 
 
@@ -1821,485 +1821,484 @@ BitBlade_DW01_add_J3_0 8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J4_0 8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J1_1 8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J5_0 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J1_2 8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J2_1 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J4_1 8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J6_0 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J3_1 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J1_3 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J1_2 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J4_1 8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J7_0 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J3_1 8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J2_2 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J8_0 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J1_3 8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J4_2 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J3_2 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J27_11
+BitBlade_DW01_add_J19_5
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J29_0
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J18_5
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J21_4
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J22_4
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J16_7
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J20_5
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J24_3
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J17_6
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J23_3
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J26_2
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J25_2
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_4108 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J30_0
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J27_1
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J19_6
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_4109 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J21_6
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J16_9
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J22_6
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J20_7
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J17_8
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J24_5
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J29_2
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J23_5
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J26_4
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J25_4
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J30_1
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J19_8
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J27_3
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J18_8
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J28_3
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_4110 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J22_7
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J16_10
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J21_7
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J20_8
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J17_9
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J24_6
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J29_3
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J23_6
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J25_5
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J26_5
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J19_9
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J30_2
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J27_4
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J28_4
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J18_9
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J16_13
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_4113 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J22_10
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J21_10
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J23_9
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J17_12
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J24_9
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J25_8
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J26_8
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J29_6
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J20_11
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J19_12
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J27_7
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J30_5
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J18_12
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J28_7
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J22_11
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J21_11
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J16_14
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_4114 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J17_13
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J23_10
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J25_9
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J24_10
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J29_7
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J26_9
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J20_12
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J19_13
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J27_8
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J30_6
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J18_13
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J28_8
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J22_13
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J16_16
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J21_13
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_4116 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J23_12
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J17_15
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J25_11
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J24_12
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J29_9
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J26_11
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J20_14
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J19_15
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J27_10
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J18_15
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J30_8
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J28_10
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J22_14
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J16_17
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_4117 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J21_14
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J25_12
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J23_13
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J17_16
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J29_10
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J16_19
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J19_16
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J23_15
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J30_10
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_4118 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J21_16
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J17_19
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J18_16
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J20_16
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J25_14
+BitBlade_DW01_add_J24_13
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J26_12
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J22_15
+BitBlade_DW01_add_J20_15
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J19_16
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J27_11
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J28_11
                        8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J18_16
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J30_9
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J16_18
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J22_15
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_4118 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J21_15
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J25_13
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J23_14
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J17_17
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J29_11
+                       8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J24_14
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J31_6
+BitBlade_DW01_add_J26_13
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J20_16
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J19_17
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J27_12
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J18_17
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J30_10
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J28_12
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J31_0
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J32_0
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J33_0
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J34_0
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J31_1
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J35_0
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J32_1
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J36_0
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J31_2
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J33_1
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J32_2
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J37_0
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J34_1
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J31_3
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J38_0
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J33_2
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J35_1
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J32_3
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J34_2
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J31_4
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J39_0
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J36_1
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J33_3
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J40_0
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J37_1
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J35_2
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J32_4
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J34_3
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J31_5
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J41_0
                        8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J33_4
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J36_2
+                       8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J38_1
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J34_4
+BitBlade_DW01_add_J42_0
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J35_3
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J37_2
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J33_5
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J32_6
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J36_3
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J42_0
+BitBlade_DW01_add_J32_5
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J39_1
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J40_1
+BitBlade_DW01_add_J34_4
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J31_7
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J34_5
+BitBlade_DW01_add_J31_6
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J38_2
                        8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J43_0
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J33_5
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J36_3
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J40_1
+                       8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J35_4
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J31_9
+BitBlade_DW01_add_J37_3
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J36_5
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J34_7
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J38_4
+BitBlade_DW01_add_J44_0
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J39_3
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J40_3
+BitBlade_DW01_add_J34_6
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J42_1
+BitBlade_DW01_add_J38_4
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J33_7
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J41_2
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J35_6
+BitBlade_DW01_add_J43_1
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_4119 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J45_0
+BitBlade_DW01_add_J36_5
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J33_8
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J32_9
+BitBlade_DW01_add_J44_1
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J37_5
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J31_10
+BitBlade_DW01_add_J35_6
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J32_8
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J42_2
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J40_3
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J31_9
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J39_4
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J34_7
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J38_5
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J45_1
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J33_8
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_4120 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J41_3
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J36_6
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J40_6
+BitBlade_DW01_add_J43_2
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J45_2
+BitBlade_DW01_add_J35_7
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J39_6
+BitBlade_DW01_add_J37_6
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J43_3
+BitBlade_DW01_add_J32_9
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J32_12
+BitBlade_DW01_add_J44_2
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J31_10
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J40_4
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J42_3
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J39_5
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J34_8
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J45_3
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J38_7
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J41_5
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J33_11
+BitBlade_DW01_add_J33_10
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J35_9
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J42_4
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J31_13
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J34_11
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J38_8
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J36_9
+BitBlade_DW01_add_4122 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J36_8
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J37_8
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_4121 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J44_3
+BitBlade_DW01_add_J43_4
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J35_9
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J32_11
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J40_6
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J44_4
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J31_12
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J42_5
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J39_7
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J34_10
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J34_12
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J39_9
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J43_6
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_4123 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J37_10
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J32_15
-                       8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J41_8
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J33_13
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_4125 8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J36_11
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J37_11
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J43_7
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J35_12
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J33_14
+BitBlade_DW01_add_J44_7
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J31_16
+BitBlade_DW01_add_J32_14
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J42_7
+BitBlade_DW01_add_J40_9
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J34_14
+BitBlade_DW01_add_J31_15
+                       8000              saed32hvt_ss0p95v125c
+BitBlade_DW01_add_J42_8
                        8000              saed32hvt_ss0p95v125c
 BitBlade_DW01_add_J38_11
                        8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J36_12
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J45_6
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J40_10
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J44_6
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J61_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J62_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J63_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J62_1
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J64_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J61_1
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J65_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J63_1
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J62_2
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J66_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J61_2
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J64_1
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J67_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J63_2
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J65_1
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J62_3
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J61_3
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J68_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J64_2
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J66_1
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J63_3
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J62_4
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J69_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J65_2
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J67_1
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J61_4
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J70_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J66_2
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J68_1
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J62_5
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J63_4
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J71_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J66_4
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J64_4
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J68_3
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J70_2
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J74_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J62_7
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J65_5
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J67_4
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J69_3
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J71_1
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J72_1
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J63_6
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J61_7
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_4131 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J75_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J66_5
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J93_6
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J98_2
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J102_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J94_6
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J91_7
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J96_4
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J95_5
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J99_2
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J97_3
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J100_2
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J92_7
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J93_7
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J103_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J101_1
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J94_7
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J95_6
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J100_3
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J93_8
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J104_0
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J91_10
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J94_9
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J104_1
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J96_7
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J101_3
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J102_2
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J97_6
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J99_5
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J95_8
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J100_5
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J92_10
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J93_10
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J98_5
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_4142 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J105_1
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J94_12
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J98_7
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J105_3
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J91_13
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J96_10
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J104_4
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J103_4
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J101_6
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J102_5
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J92_13
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J95_11
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J97_9
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J99_8
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J100_8
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J93_13
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_4145 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J94_13
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J91_14
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J98_8
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J105_4
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J96_11
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J104_5
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J103_5
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J92_14
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J102_6
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J101_7
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J95_12
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J97_10
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J99_9
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J100_9
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_4146 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J94_14
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J91_15
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J91_16
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J98_10
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J105_6
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J96_13
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J92_16
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J104_7
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J103_7
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J95_14
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J102_8
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J101_9
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J97_12
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J99_11
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J93_16
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J100_11
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J94_16
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_4148 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J91_17
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J98_11
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J105_7
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J96_14
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J92_17
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J104_8
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J95_15
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J103_8
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J102_9
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J101_10
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J97_13
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J93_17
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J99_12
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J100_12
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J94_17
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J91_18
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_4149 8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J98_12
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J96_15
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J92_18
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J105_8
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J104_9
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J95_16
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J103_9
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J97_14
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J102_10
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J101_11
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J93_18
-                       8000              saed32hvt_ss0p95v125c
-BitBlade_DW01_add_J99_13
+BitBlade_DW01_add_J45_7
                        8000              saed32hvt_ss0p95v125c
 
 
@@ -2312,12 +2311,12 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  =  50.8672 mW   (84%)
-  Net Switching Power  =  10.0340 mW   (16%)
+  Cell Internal Power  =  50.5983 mW   (84%)
+  Net Switching Power  =   9.8705 mW   (16%)
                          ---------
-Total Dynamic Power    =  60.9013 mW  (100%)
+Total Dynamic Power    =  60.4689 mW  (100%)
 
-Cell Leakage Power     =   9.2077 mW
+Cell Leakage Power     =   9.5750 mW
 
 
                  Internal         Switching           Leakage            Total
@@ -2327,9 +2326,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register       2.6512e+04        1.0487e+03        1.7854e+09        2.9346e+04  (  41.86%)
+register       2.7302e+04        1.0436e+03        1.8651e+09        3.0210e+04  (  43.13%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational  2.4355e+04        8.9853e+03        7.4223e+09        4.0763e+04  (  58.14%)
+combinational  2.3297e+04        8.8270e+03        7.7099e+09        3.9834e+04  (  56.87%)
 --------------------------------------------------------------------------------------------------
-Total          5.0867e+04 uW     1.0034e+04 uW     9.2077e+09 pW     7.0109e+04 uW
+Total          5.0599e+04 uW     9.8707e+03 uW     9.5750e+09 pW     7.0044e+04 uW
 1

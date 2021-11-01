@@ -19,7 +19,7 @@ module PE(
     // 16 BBs -> up to 10bit
     // 16 PEs -> up to 14bit
     
-    output [7:0] PE_sum
+    output [9:0] PE_sum
     );
     
     wire [5:0] p [15:0];

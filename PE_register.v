@@ -7,8 +7,8 @@ module PE_register(
     input clk,
     input reset,
     
-    input [7:0] PE_sum, 
-    output reg [7:0] PE_sum_out
+    input [9:0] PE_sum, 
+    output reg [9:0] PE_sum_out
 );
     
     always @ (posedge clk)

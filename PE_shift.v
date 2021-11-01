@@ -3,7 +3,7 @@
 module PE_shift(
     input clk,
     input reset,
-    input [7:0] PE_sum_in,
+    input [9:0] PE_sum_in,
     input [2:0] signal,
     
     output [19:0] shifted_PE_sum
@@ -17,6 +17,6 @@ module PE_shift(
 //    Therefore, here, the number of bit of product is just 16bit which is 12bit(shift) + 4bit(output bit)
 
     //sign extension and shift it
-    assign shifted_PE_sum = { {12{PE_sum_in[7]}}, PE_sum_in } << (signal*2);
+    assign shifted_PE_sum = { {10{PE_sum_in[9]}}, PE_sum_in } << (signal*2);
     
 endmodule
