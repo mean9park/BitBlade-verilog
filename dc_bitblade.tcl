@@ -23,7 +23,6 @@ define_design_lib WORK -path WORK
 set SOURCE_FILES {
     ./HA.v
     ./FA.v
-	./ACC_Shift.v
 	./ACC_register.v
 	./accumulator.v
 	./BitBlade_column.v
@@ -40,6 +39,8 @@ set SOURCE_FILES {
 	./Weight_MUX_REG.v
 	./Weight_wire_packing.v
 }
+	
+    # ./ACC_Shift.v
 
 analyze -format verilog $SOURCE_FILES -library WORK
 elaborate BitBlade

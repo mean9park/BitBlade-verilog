@@ -84,7 +84,6 @@
 /home/espanol/RSSA_DC/bitblade/dc_bitblade.tcl
 /home/espanol/RSSA_DC/bitblade/HA.v
 /home/espanol/RSSA_DC/bitblade/FA.v
-/home/espanol/RSSA_DC/bitblade/ACC_Shift.v
 /home/espanol/RSSA_DC/bitblade/ACC_register.v
 /home/espanol/RSSA_DC/bitblade/accumulator.v
 /home/espanol/RSSA_DC/bitblade/BitBlade_column.v
