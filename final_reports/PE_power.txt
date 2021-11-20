@@ -4,13 +4,13 @@ Report : power
         -analysis_effort low
 Design : PE
 Version: N-2017.09-SP3
-Date   : Fri Oct 22 01:13:01 2021
+Date   : Fri Nov 19 21:54:12 2021
 ****************************************
 
 
 Library(s) Used:
 
-    saed32hvt_ss0p95v125c (File: /home/espanol/libraries/SAED32_EDK_01132015/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
+    saed32hvt_ss0p95v125c (File: /home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
 
 
 Operating Conditions: ss0p95v125c   Library: saed32hvt_ss0p95v125c
@@ -30,12 +30,12 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  =  72.1830 uW   (75%)
-  Net Switching Power  =  23.9235 uW   (25%)
+  Cell Internal Power  =  60.9889 uW   (74%)
+  Net Switching Power  =  21.2301 uW   (26%)
                          ---------
-Total Dynamic Power    =  96.1065 uW  (100%)
+Total Dynamic Power    =  82.2191 uW  (100%)
 
-Cell Leakage Power     =  15.4904 uW
+Cell Leakage Power     =  15.0167 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -47,7 +47,7 @@ black_box          0.0000            0.0000            0.0000            0.0000 
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
 register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational     72.1829           23.9235        1.5490e+07          111.5969  ( 100.00%)
+combinational     60.9889           21.2301        1.5017e+07           97.2358  ( 100.00%)
 --------------------------------------------------------------------------------------------------
-Total             72.1829 uW        23.9235 uW     1.5490e+07 pW       111.5969 uW
+Total             60.9889 uW        21.2301 uW     1.5017e+07 pW        97.2358 uW
 1

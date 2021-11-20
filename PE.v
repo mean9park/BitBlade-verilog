@@ -5,22 +5,21 @@
 //  17-way adder tree
 //  output = p_5 p_4 p_3 p_2 p_1 p_0 (6bit)
 
-module PE(
-    input clk,
-    input reset,
-    input [31:0] x, 
-    input [31:0] y,
+module PE(clk, reset, x, y, sign_x, sign_y, PE_sum);
+    input wire clk;
+    input wire reset;
+    input wire [31:0] x; 
+    input wire [31:0] y;
     
     // one position -> one sign information
-    input sign_x,
-    input sign_y,    
+    input wire sign_x;
+    input wire sign_y;
     
     // BB : 6bit
     // 16 BBs -> up to 10bit
     // 16 PEs -> up to 14bit
     
-    output [9:0] PE_sum
-    );
+    output reg [9:0] PE_sum;
     
     wire [5:0] p [15:0];
     

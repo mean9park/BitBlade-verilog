@@ -2,7 +2,7 @@ set_host_options -max_cores 16
 
 set search_path [list .]
  
-set edk_home /home/espanol/libraries/SAED32_EDK_01132015/
+set edk_home /home/espanol/libraries/PDKS/SAED32_EDK_12162019/
 set io_dir $edk_home/lib/io_std
 set pll_dir $edk_home/lib/pll
 set stdcell_dir $edk_home/lib/stdcell_hvt
@@ -72,14 +72,22 @@ ungroup -all -flatten
 compile_ultra
 # compile
 
+report_design > $design_dir/design
+
+report_synthetic > $reports_dir/synthetic
 
 report_timing > $final_reports_dir/timing.txt
 sh cat $final_reports_dir/timing.txt
+
+# current_design PE.v
 
 report_area > $final_reports_dir/area.txt
 sh cat $final_reports_dir/area.txt
 
 report_power > $final_reports_dir/power.txt
 sh cat $final_reports_dir/power.txt
+
+write_file -f verilog -hier -output ./output/syn.c
+write_file -f ddc -hier -output ./output/syn.ddc
 
 #exit

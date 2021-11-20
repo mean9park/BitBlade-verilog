@@ -1,0 +1,23 @@
+set search_path [list .]
+
+set liberty_dir /home/espanol/libraries/PDKS/SAED32_EDK_12162019/SAED_EDK32.28nm_REF_v_15032018/orca/dc/models
+set stdcell_dir /home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/stdcell_hvt/db_nldm
+
+set link_library "*  $stdcell_dir/saed32hvt_ss0p95v125c.db    $liberty_dir/saed32io_ss0p95v125c_2p25v.db  "
+set target_library "  $stdcell_dir/saed32hvt_ss0p95v125c.db    $liberty_dir/saed32io_ss0p95v125c_2p25v.db  "
+
+set area_enable_analysis TRUE
+set area_analysis_mode averaged
+
+read_verilog {./PE.v ./PE_adder.v}
+
+
+link_design
+
+current_design
+
+check_area
+update_area
+
+report_area -verbose -hierarchy > PRIMETIME_${current_design}_area.txt
+

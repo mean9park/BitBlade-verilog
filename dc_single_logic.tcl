@@ -2,7 +2,7 @@ set_host_options -max_cores 16
 
 set search_path [list .]
  
-set edk_home /home/espanol/libraries/SAED32_EDK_01132015/
+set edk_home /home/espanol/libraries/PDKS/SAED32_EDK_12162019/
 set io_dir $edk_home/lib/io_std
 set pll_dir $edk_home/lib/pll
 set stdcell_dir $edk_home/lib/stdcell_hvt
@@ -21,23 +21,29 @@ sh rm -rf ./WORK
 define_design_lib WORK -path WORK
 
 set SOURCE_FILES {
-    ./BitBlade_column.v
-    ./Buffer_32bit.v
-    ./bitbrick.v
-    ./PE.v
-    ./PE_register.v
-    ./PE_shift.v
-    ./PE_adder.v
     ./signed3bit_MUL.v
-    ./ACC_Shift.v
-    ./ACC_register.v
-    ./accumulator.v
-    ./Weight_wire_packing.v
-    ./Weight_MUX_REG.v
+    ./HA.v
+    ./FA.v
+    ./bitbrick.v
 }
 
+    # ./PE.v
+    # ./PE_register.v
+    # ./PE_shift.v
+    # ./PE_adder.v
+
+    # ./MUL3b3b.v
+    # ./MUL2b2b.v
+    # ./Buffer_32bit.v
+    # ./BitBlade_column.v
+    # ./ACC_Shift.v
+    # ./ACC_register.v
+    # ./accumulator.v
+    # ./Weight_wire_packing.v
+    # ./Weight_MUX_REG.v
+
 analyze -format verilog $SOURCE_FILES -library WORK
-elaborate BitBlade_column
+elaborate bitbrick
 
 set reports_dir reports
 set final_reports_dir final_reports
@@ -53,8 +59,11 @@ if { ! [ file exists $design_dir] } {
 	file mkdir $design_dir
 }
 
-# set current_design top
-link
+# set_dont_touch (get_designs MUL2b2b)
+# set_dont_touch (get_designs signed_3bit_MUL)
+set_dont_touch (get_designs bitbrick)
+# set current_design MUL3b3b
+# link
 
 create_clock clk -period 3
 
@@ -63,13 +72,13 @@ ungroup -all -flatten
 compile_ultra
 #compile
 
-report_timing > $final_reports_dir/column_timing.txt
-sh cat $final_reports_dir/column_timing.txt
+report_timing > $final_reports_dir/${current_design}_timing.txt
+sh cat $final_reports_dir/${current_design}_timing.txt
 
-report_area > $final_reports_dir/column_area.txt
-sh cat $final_reports_dir/column_area.txt
+report_area > $final_reports_dir/${current_design}_area.txt
+sh cat $final_reports_dir/${current_design}_area.txt
 
-report_power > $final_reports_dir/column_power.txt
-sh cat $final_reports_dir/column_power.txt
+report_power > $final_reports_dir/${current_design}_power.txt
+sh cat $final_reports_dir/${current_design}_power.txt
 
 #exit

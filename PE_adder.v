@@ -1,25 +1,25 @@
 `timescale 1ns / 1ps
 
-module PE_adder(
-    input [5:0] p_0, 
-    input [5:0] p_1,
-    input [5:0] p_2,
-    input [5:0] p_3,
-    input [5:0] p_4,
-    input [5:0] p_5,
-    input [5:0] p_6,
-    input [5:0] p_7,
-    input [5:0] p_8,
-    input [5:0] p_9,
-    input [5:0] p_10,
-    input [5:0] p_11,
-    input [5:0] p_12,
-    input [5:0] p_13,
-    input [5:0] p_14,
-    input [5:0] p_15,
+module PE_adder(p_0, p_1, p_2, p_3, p_4, p_5, p_6, p_7, p_8, p_9, p_10, p_11, p_12, p_13, p_14, p_15, PE_sum); 
+    input [5:0] p_0;
+    input [5:0] p_1;
+    input [5:0] p_2;
+    input [5:0] p_3;
+    input [5:0] p_4;
+    input [5:0] p_5;
+    input [5:0] p_6;
+    input [5:0] p_7;
+    input [5:0] p_8;
+    input [5:0] p_9;
+    input [5:0] p_10;
+    input [5:0] p_11;
+    input [5:0] p_12;
+    input [5:0] p_13;
+    input [5:0] p_14;
+    input [5:0] p_15;
     
-    output [9:0] PE_sum
-);
+    output [9:0] PE_sum;
+
     // !!!!!!!!!!!!! IMPORTANT !!!!!!!!!!!!!!!!
     // p_0 ~ p_15 : 6bit(signed 3bit X 3bit)
     // But it doesn't actually require 6bit, only 4 bit is needed.

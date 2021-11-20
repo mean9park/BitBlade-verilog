@@ -3,12 +3,12 @@
 Report : area
 Design : BitBlade
 Version: N-2017.09-SP3
-Date   : Tue Nov  2 10:32:24 2021
+Date   : Wed Nov 10 13:45:11 2021
 ****************************************
 
 Library(s) Used:
 
-    saed32hvt_ss0p95v125c (File: /home/espanol/libraries/SAED32_EDK_01132015/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
+    saed32hvt_ss0p95v125c (File: /home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
 
 Number of ports:                         9232
 Number of nets:                        203416

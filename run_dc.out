@@ -24,26 +24,26 @@ set_host_options -max_cores 16
 1
 set search_path [list .]
 .
-set edk_home /home/espanol/libraries/SAED32_EDK_01132015/
-/home/espanol/libraries/SAED32_EDK_01132015/
+set edk_home /home/espanol/libraries/PDKS/SAED32_EDK_12162019/
+/home/espanol/libraries/PDKS/SAED32_EDK_12162019/
 set io_dir $edk_home/lib/io_std
-/home/espanol/libraries/SAED32_EDK_01132015//lib/io_std
+/home/espanol/libraries/PDKS/SAED32_EDK_12162019//lib/io_std
 set pll_dir $edk_home/lib/pll
-/home/espanol/libraries/SAED32_EDK_01132015//lib/pll
+/home/espanol/libraries/PDKS/SAED32_EDK_12162019//lib/pll
 set stdcell_dir $edk_home/lib/stdcell_hvt
-/home/espanol/libraries/SAED32_EDK_01132015//lib/stdcell_hvt
+/home/espanol/libraries/PDKS/SAED32_EDK_12162019//lib/stdcell_hvt
 set io_db_dir $io_dir/db_nldm
-/home/espanol/libraries/SAED32_EDK_01132015//lib/io_std/db_nldm
+/home/espanol/libraries/PDKS/SAED32_EDK_12162019//lib/io_std/db_nldm
 set pll_db_dir $pll_dir/db_nldm
-/home/espanol/libraries/SAED32_EDK_01132015//lib/pll/db_nldm
+/home/espanol/libraries/PDKS/SAED32_EDK_12162019//lib/pll/db_nldm
 set stdcell_db_dir $stdcell_dir/db_nldm
-/home/espanol/libraries/SAED32_EDK_01132015//lib/stdcell_hvt/db_nldm
+/home/espanol/libraries/PDKS/SAED32_EDK_12162019//lib/stdcell_hvt/db_nldm
 set synthetic_library dw_foundation.sldb
 dw_foundation.sldb
 set link_library "*  $stdcell_db_dir/saed32hvt_ss0p95v125c.db   $pll_db_dir/saed32pll_ss0p95v125c_2p25v.db  $io_db_dir/saed32io_fc_ss0p95v125c_2p25v.db     $synthetic_library"
-*  /home/espanol/libraries/SAED32_EDK_01132015//lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db   /home/espanol/libraries/SAED32_EDK_01132015//lib/pll/db_nldm/saed32pll_ss0p95v125c_2p25v.db  /home/espanol/libraries/SAED32_EDK_01132015//lib/io_std/db_nldm/saed32io_fc_ss0p95v125c_2p25v.db     dw_foundation.sldb
+*  /home/espanol/libraries/PDKS/SAED32_EDK_12162019//lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db   /home/espanol/libraries/PDKS/SAED32_EDK_12162019//lib/pll/db_nldm/saed32pll_ss0p95v125c_2p25v.db  /home/espanol/libraries/PDKS/SAED32_EDK_12162019//lib/io_std/db_nldm/saed32io_fc_ss0p95v125c_2p25v.db     dw_foundation.sldb
 set target_library "  $stdcell_db_dir/saed32hvt_ss0p95v125c.db  $pll_db_dir/saed32pll_ss0p95v125c_2p25v.db   $io_db_dir/saed32io_fc_ss0p95v125c_2p25v.db  "
-  /home/espanol/libraries/SAED32_EDK_01132015//lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db  /home/espanol/libraries/SAED32_EDK_01132015//lib/pll/db_nldm/saed32pll_ss0p95v125c_2p25v.db   /home/espanol/libraries/SAED32_EDK_01132015//lib/io_std/db_nldm/saed32io_fc_ss0p95v125c_2p25v.db  
+  /home/espanol/libraries/PDKS/SAED32_EDK_12162019//lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db  /home/espanol/libraries/PDKS/SAED32_EDK_12162019//lib/pll/db_nldm/saed32pll_ss0p95v125c_2p25v.db   /home/espanol/libraries/PDKS/SAED32_EDK_12162019//lib/io_std/db_nldm/saed32io_fc_ss0p95v125c_2p25v.db  
 sh rm -rf ./WORK
 define_design_lib WORK -path WORK
 1
@@ -108,9 +108,9 @@ Compiling source file ./top.v
 Compiling source file ./Weight_MUX_REG.v
 Compiling source file ./Weight_wire_packing.v
 Presto compilation completed successfully.
-Loading db file '/home/espanol/libraries/SAED32_EDK_01132015/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db'
-Loading db file '/home/espanol/libraries/SAED32_EDK_01132015/lib/pll/db_nldm/saed32pll_ss0p95v125c_2p25v.db'
-Loading db file '/home/espanol/libraries/SAED32_EDK_01132015/lib/io_std/db_nldm/saed32io_fc_ss0p95v125c_2p25v.db'
+Loading db file '/home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db'
+Loading db file '/home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/pll/db_nldm/saed32pll_ss0p95v125c_2p25v.db'
+Loading db file '/home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/io_std/db_nldm/saed32io_fc_ss0p95v125c_2p25v.db'
 Loading db file '/usr/synopsys/SYN/libraries/syn/dw_foundation.sldb'
 1
 elaborate BitBlade
@@ -34880,44 +34880,44 @@ Threshold voltage group cell usage:
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:09:40  486102.0      0.05       3.4     272.4                           7358991872.0000
-    0:09:42  487715.8      0.00       0.0     265.9                           7386183680.0000
-    0:09:42  487715.8      0.00       0.0     265.9                           7386183680.0000
-    0:09:43  487714.5      0.00       0.0     265.9                           7386159104.0000
+    0:10:22  486102.0      0.05       3.4     272.4                           7358991872.0000
+    0:10:24  487715.8      0.00       0.0     265.9                           7386183680.0000
+    0:10:24  487715.8      0.00       0.0     265.9                           7386183680.0000
+    0:10:25  487714.5      0.00       0.0     265.9                           7386159104.0000
 
 Threshold voltage group cell usage:
 >> saed32cell_hvt 100.00%, saed32cell_svt 0.00%
 
   Beginning WLM Backend Optimization
   --------------------------------------
-    0:10:53  487516.6      0.00       0.0     266.0                           7367546880.0000
-    0:10:57  487413.9      0.00       0.0     261.7                           7357910016.0000
-    0:11:22  487227.3      0.00       0.0     253.3                           7351614464.0000
-    0:11:30  486302.0      0.00       0.0     253.1                           7331046400.0000
-    0:11:35  483675.4      0.00       0.0     251.9                           7268954624.0000
-    0:11:38  480659.8      0.00       0.0     251.9                           7198217216.0000
-    0:11:40  478575.0      0.00       0.0     251.9                           7149983232.0000
-    0:11:42  477180.0      0.00       0.0     251.9                           7117478912.0000
-    0:11:43  476581.0      0.00       0.0     251.9                           7103497216.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:11:42  487516.6      0.00       0.0     266.0                           7367546880.0000
+    0:11:46  487413.9      0.00       0.0     261.7                           7357910016.0000
+    0:12:12  487227.3      0.00       0.0     253.3                           7351614464.0000
+    0:12:20  486302.0      0.00       0.0     253.1                           7331046400.0000
+    0:12:25  483675.4      0.00       0.0     251.9                           7268954624.0000
+    0:12:28  480659.8      0.00       0.0     251.9                           7198217216.0000
+    0:12:30  478575.0      0.00       0.0     251.9                           7149983232.0000
+    0:12:32  477180.0      0.00       0.0     251.9                           7117478912.0000
+    0:12:33  476581.0      0.00       0.0     251.9                           7103497216.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
 
 
   Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
@@ -34927,13 +34927,13 @@ Threshold voltage group cell usage:
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:12:01  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
   Global Optimization (Phase 35)
   Global Optimization (Phase 36)
   Global Optimization (Phase 37)
-    0:12:08  476861.6      0.01       0.0       0.1 BitBlade_column_13/PE_reg_16/PE_sum_out_reg[8]/D 6915879936.0000
-    0:12:10  476903.5      0.00       0.0       0.0                           6915771904.0000
-    0:12:10  476903.5      0.00       0.0       0.0                           6915771904.0000
+    0:12:58  476861.6      0.01       0.0       0.1 BitBlade_column_13/PE_reg_16/PE_sum_out_reg[8]/D 6915879936.0000
+    0:13:00  476903.5      0.00       0.0       0.0                           6915771904.0000
+    0:13:00  476903.5      0.00       0.0       0.0                           6915771904.0000
 
 Threshold voltage group cell usage:
 >> saed32cell_hvt 100.00%, saed32cell_svt 0.00%
@@ -34946,7 +34946,7 @@ Threshold voltage group cell usage:
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:12:10  476903.5      0.00       0.0       0.0                           6915771904.0000
+    0:13:00  476903.5      0.00       0.0       0.0                           6915771904.0000
   Global Optimization (Phase 38)
   Global Optimization (Phase 39)
   Global Optimization (Phase 40)
@@ -34963,53 +34963,53 @@ Threshold voltage group cell usage:
   Global Optimization (Phase 51)
   Global Optimization (Phase 52)
   Global Optimization (Phase 53)
-    0:12:44  475298.8      0.06       7.1       2.9 BitBlade_column_15/PE_reg_3/PE_sum_out_reg[9]/D 6862704128.0000
-    0:12:45  475470.4      0.05       5.5       2.8                           6866838016.0000
-    0:12:52  476733.2      0.00       0.0      84.7                           6902410752.0000
-    0:12:52  476733.2      0.00       0.0      84.7                           6902410752.0000
-    0:13:02  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:02  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:02  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:02  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:02  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:02  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:02  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:02  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:02  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:02  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:02  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:02  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:02  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:02  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:02  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:03  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:03  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:03  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:03  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:33  475298.8      0.06       7.1       2.9 BitBlade_column_15/PE_reg_3/PE_sum_out_reg[9]/D 6862704128.0000
+    0:13:35  475470.4      0.05       5.5       2.8                           6866838016.0000
+    0:13:42  476733.2      0.00       0.0      84.7                           6902410752.0000
+    0:13:42  476733.2      0.00       0.0      84.7                           6902410752.0000
+    0:13:51  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
 
                                   TOTAL                                                
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:13:08  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:19  475672.4      0.02       0.2      71.8                           6887642624.0000
-    0:13:20  475692.8      0.01       0.0      71.8                           6887943680.0000
-    0:13:20  475692.8      0.01       0.0      71.8                           6887943680.0000
-    0:13:29  475692.5      0.01       0.1      71.2                           6887622656.0000
-    0:13:39  475648.5      0.01       0.1      71.2                           6887068672.0000
-    0:13:42  475592.6      0.01       0.1      71.2                           6886129152.0000
-    0:13:44  475568.7      0.01       0.1      71.2                           6885825024.0000
-    0:13:50  475829.0      0.01       0.1       2.6 packed_input_14[22]       6886596608.0000
-    0:13:52  476501.2      0.01       0.2       0.3 net588845                 6893882880.0000
-    0:13:56  476777.7      0.00       0.0       0.0 BitBlade_column_15/PE_reg_16/PE_sum_out_reg[8]/D 6897804288.0000
-    0:13:57  476805.7      0.00       0.0       0.0                           6898620416.0000
-    0:13:57  476805.7      0.00       0.0       0.0                           6898620416.0000
-    0:13:57  476805.7      0.00       0.0       0.0                           6898620416.0000
-    0:13:57  476805.7      0.00       0.0       0.0                           6898620416.0000
-    0:14:08  476662.6      0.00       0.0      38.3                           6900709376.0000
-Loading db file '/home/espanol/libraries/SAED32_EDK_01132015/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db'
-Loading db file '/home/espanol/libraries/SAED32_EDK_01132015/lib/pll/db_nldm/saed32pll_ss0p95v125c_2p25v.db'
-Loading db file '/home/espanol/libraries/SAED32_EDK_01132015/lib/io_std/db_nldm/saed32io_fc_ss0p95v125c_2p25v.db'
+    0:13:57  476609.7      0.00       0.0      73.2                           6884261888.0000
+    0:14:08  475672.4      0.02       0.2      71.8                           6887642624.0000
+    0:14:09  475692.8      0.01       0.0      71.8                           6887943680.0000
+    0:14:09  475692.8      0.01       0.0      71.8                           6887943680.0000
+    0:14:18  475692.5      0.01       0.1      71.2                           6887622656.0000
+    0:14:28  475648.5      0.01       0.1      71.2                           6887068672.0000
+    0:14:31  475592.6      0.01       0.1      71.2                           6886129152.0000
+    0:14:33  475568.7      0.01       0.1      71.2                           6885825024.0000
+    0:14:38  475829.0      0.01       0.1       2.6 packed_input_14[22]       6886596608.0000
+    0:14:40  476501.2      0.01       0.2       0.3 net588845                 6893882880.0000
+    0:14:44  476777.7      0.00       0.0       0.0 BitBlade_column_15/PE_reg_16/PE_sum_out_reg[8]/D 6897804288.0000
+    0:14:45  476805.7      0.00       0.0       0.0                           6898620416.0000
+    0:14:45  476805.7      0.00       0.0       0.0                           6898620416.0000
+    0:14:45  476805.7      0.00       0.0       0.0                           6898620416.0000
+    0:14:45  476805.7      0.00       0.0       0.0                           6898620416.0000
+    0:14:55  476662.6      0.00       0.0      38.3                           6900709376.0000
+Loading db file '/home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db'
+Loading db file '/home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/pll/db_nldm/saed32pll_ss0p95v125c_2p25v.db'
+Loading db file '/home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/io_std/db_nldm/saed32io_fc_ss0p95v125c_2p25v.db'
 
 
 Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
@@ -35025,10 +35025,10 @@ Information: State dependent leakage is now switched from off to on.
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
 1
 # compile
+report_design > $design_dir/design
+report_synthetic > $reports_dir/synthetic
 report_timing > $final_reports_dir/timing.txt
 sh cat $final_reports_dir/timing.txt
-Information: Updating design information... (UID-85)
-Warning: Design 'BitBlade' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
  
 ****************************************
 Report : timing
@@ -35037,7 +35037,7 @@ Report : timing
         -max_paths 1
 Design : BitBlade
 Version: N-2017.09-SP3
-Date   : Tue Nov  2 10:32:24 2021
+Date   : Wed Nov 10 13:45:11 2021
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -35098,6 +35098,7 @@ Wire Load Model Mode: enclosed
 
 
 1
+# current_design PE.v
 report_area > $final_reports_dir/area.txt
 sh cat $final_reports_dir/area.txt
  
@@ -35105,12 +35106,12 @@ sh cat $final_reports_dir/area.txt
 Report : area
 Design : BitBlade
 Version: N-2017.09-SP3
-Date   : Tue Nov  2 10:32:24 2021
+Date   : Wed Nov 10 13:45:11 2021
 ****************************************
 
 Library(s) Used:
 
-    saed32hvt_ss0p95v125c (File: /home/espanol/libraries/SAED32_EDK_01132015/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
+    saed32hvt_ss0p95v125c (File: /home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
 
 Number of ports:                         9232
 Number of nets:                        203416
@@ -35138,13 +35139,13 @@ Report : power
         -analysis_effort low
 Design : BitBlade
 Version: N-2017.09-SP3
-Date   : Tue Nov  2 10:32:24 2021
+Date   : Wed Nov 10 13:45:11 2021
 ****************************************
 
 
 Library(s) Used:
 
-    saed32hvt_ss0p95v125c (File: /home/espanol/libraries/SAED32_EDK_01132015/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
+    saed32hvt_ss0p95v125c (File: /home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
 
 
 Operating Conditions: ss0p95v125c   Library: saed32hvt_ss0p95v125c
@@ -35185,6 +35186,14 @@ combinational  1.3532e+04        5.2877e+03        4.9450e+09        2.3764e+04 
 --------------------------------------------------------------------------------------------------
 Total          3.9957e+04 uW     5.9263e+03 uW     6.6877e+09 pW     5.2571e+04 uW
 1
+write_file -f verilog -hier -output ./output/syn.c
+Error: Can't open export file '/home/espanol/RSSA_DC/bitblade/output/syn.c'. (EXPT-4)
+Error: Write command failed. (UID-25)
+0
+write_file -f ddc -hier -output ./output/syn.ddc
+Error: Unable to open DDC file './output/syn.ddc' for writing. (DDC-1)
+Error: Write command failed. (UID-25)
+0
 #exit
 Warning: Cannot use command line editor for terminal type 'xterm-256color'.  (UI-74)
 dc_shell> 
