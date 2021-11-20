@@ -87,7 +87,7 @@ sh cat $final_reports_dir/area.txt
 report_power > $final_reports_dir/power.txt
 sh cat $final_reports_dir/power.txt
 
-write_file -f verilog -hier -output ./output/syn.c
+write_file -f verilog -hier -output ./output/syn.v
 write_file -f ddc -hier -output ./output/syn.ddc
 
 #exit

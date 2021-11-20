@@ -48,24 +48,21 @@ sh rm -rf ./WORK
 define_design_lib WORK -path WORK
 1
 set SOURCE_FILES {
-    ./signed3bit_MUL.v
-    ./HA.v
-    ./FA.v
-    ./bitbrick.v
+    ./Buffer_32bit.v
 }
 
-    ./signed3bit_MUL.v
-    ./HA.v
-    ./FA.v
-    ./bitbrick.v
+    ./Buffer_32bit.v
 
+# ./bitbrick.v
+# ./signed3bit_MUL.v
+# ./HA.v
+# ./FA.v
 # ./PE.v
 # ./PE_register.v
 # ./PE_shift.v
 # ./PE_adder.v
 # ./MUL3b3b.v
 # ./MUL2b2b.v
-# ./Buffer_32bit.v
 # ./BitBlade_column.v
 # ./ACC_Shift.v
 # ./ACC_register.v
@@ -74,17 +71,14 @@ set SOURCE_FILES {
 # ./Weight_MUX_REG.v
 analyze -format verilog $SOURCE_FILES -library WORK
 Running PRESTO HDLC
-Compiling source file ./signed3bit_MUL.v
-Compiling source file ./HA.v
-Compiling source file ./FA.v
-Compiling source file ./bitbrick.v
+Compiling source file ./Buffer_32bit.v
 Presto compilation completed successfully.
 Loading db file '/home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db'
 Loading db file '/home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/pll/db_nldm/saed32pll_ss0p95v125c_2p25v.db'
 Loading db file '/home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/io_std/db_nldm/saed32io_fc_ss0p95v125c_2p25v.db'
 Loading db file '/usr/synopsys/SYN/libraries/syn/dw_foundation.sldb'
 1
-elaborate bitbrick
+elaborate BUF_32bit 
 Loading db file '/usr/synopsys/SYN/libraries/syn/gtech.db'
 Loading db file '/usr/synopsys/SYN/libraries/syn/standard.sldb'
   Loading link library 'saed32hvt_ss0p95v125c'
@@ -92,15 +86,18 @@ Loading db file '/usr/synopsys/SYN/libraries/syn/standard.sldb'
   Loading link library 'saed32io_fc_ss0p95v125c_2p25v'
   Loading link library 'gtech'
 Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine BUF_32bit line 11 in file
+		'./Buffer_32bit.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_out_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
 Presto compilation completed successfully.
 Elaborated 1 design.
-Current design is now 'bitbrick'.
-Information: Building the design 'signed_3bit_MUL'. (HDL-193)
-Presto compilation completed successfully.
-Information: Building the design 'HA'. (HDL-193)
-Presto compilation completed successfully.
-Information: Building the design 'FA'. (HDL-193)
-Presto compilation completed successfully.
+Current design is now 'BUF_32bit'.
 1
 set reports_dir reports
 reports
@@ -119,23 +116,14 @@ if { ! [ file exists $design_dir] } {
 }
 # set_dont_touch (get_designs MUL2b2b)
 # set_dont_touch (get_designs signed_3bit_MUL)
-set_dont_touch (get_designs bitbrick HA FA)
-Error: extra positional option 'HA' (CMD-012)
-Error: extra positional option 'FA)' (CMD-012)
+# set_dont_touch (get_designs bitbrick)
 # set current_design MUL3b3b
 # link
 create_clock clk -period 3
 1
 ungroup -all -flatten
-Information: Changed wire load model for 'FA' from '(none)' to 'ForQA'. (OPT-170)
-Information: Changed wire load model for 'HA' from '(none)' to 'ForQA'. (OPT-170)
-Information: Changed wire load model for 'HA' from '(none)' to 'ForQA'. (OPT-170)
-Information: Changed wire load model for 'FA' from '(none)' to 'ForQA'. (OPT-170)
-Information: Changed wire load model for 'FA' from '(none)' to 'ForQA'. (OPT-170)
-Information: Changed wire load model for 'HA' from '(none)' to 'ForQA'. (OPT-170)
-Information: Changed wire load model for 'signed_3bit_MUL' from '(none)' to 'ForQA'. (OPT-170)
-Information: Updating graph... (UID-83)
-1
+Warning: Design has no hierarchy.  No cells can be ungrouped. (UID-228)
+0
 compile_ultra
 Information: Performing power optimization. (PWR-850)
 Alib files are up-to-date.
@@ -151,9 +139,9 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
 
 Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
 
-Information: There are 2 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
 
-  Simplifying Design 'bitbrick'
+  Simplifying Design 'BUF_32bit'
 
   Loading target library 'saed32pll_ss0p95v125c_2p25v'
   Loading target library 'saed32io_fc_ss0p95v125c_2p25v'
@@ -166,7 +154,7 @@ Information: State dependent leakage is now switched from on to off.
 
   Beginning Pass 1 Mapping
   ------------------------
-  Processing 'bitbrick'
+  Processing 'BUF_32bit'
 
   Updating timing information
 Information: Updating design information... (UID-85)
@@ -242,38 +230,38 @@ Threshold voltage group cell usage:
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:02      46.0      0.00       0.0       0.0                           549264.3125
-    0:00:02      46.0      0.00       0.0       0.0                           549264.3125
-    0:00:02      46.0      0.00       0.0       0.0                           549264.3125
-    0:00:03      46.0      0.00       0.0       0.0                           549264.3125
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
 
 Threshold voltage group cell usage:
 >> saed32cell_hvt 100.00%, saed32cell_svt 0.00%
 
   Beginning WLM Backend Optimization
   --------------------------------------
-    0:00:03      45.2      0.00       0.0       0.0                           557425.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
 
 Threshold voltage group cell usage:
 >> saed32cell_hvt 100.00%, saed32cell_svt 0.00%
@@ -286,7 +274,7 @@ Threshold voltage group cell usage:
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:03      45.2      0.00       0.0       0.0                           545707.1875
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
   Global Optimization (Phase 29)
   Global Optimization (Phase 30)
   Global Optimization (Phase 31)
@@ -297,43 +285,42 @@ Threshold voltage group cell usage:
   Global Optimization (Phase 36)
   Global Optimization (Phase 37)
   Global Optimization (Phase 38)
-  Global Optimization (Phase 39)
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:02     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
 
                                   TOTAL                                                
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
-    0:00:03      45.2      0.00       0.0       0.0                           498835.0938
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
+    0:00:03     211.4      0.00       0.0       0.0                           4786154.0000
 Loading db file '/home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db'
 Loading db file '/home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/pll/db_nldm/saed32pll_ss0p95v125c_2p25v.db'
 Loading db file '/home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/io_std/db_nldm/saed32io_fc_ss0p95v125c_2p25v.db'
@@ -350,47 +337,41 @@ Information: State dependent leakage is now switched from off to on.
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
 1
 #compile
+report_design > $design_dir/design_single
+report_synthetic > $reports_dir/synthetic_single
 report_timing > $final_reports_dir/${current_design}_timing.txt
 sh cat $final_reports_dir/${current_design}_timing.txt
-Information: Updating design information... (UID-85)
  
 ****************************************
 Report : timing
         -path full
         -delay max
         -max_paths 1
-Design : bitbrick
+Design : BUF_32bit
 Version: N-2017.09-SP3
-Date   : Fri Nov 19 22:12:16 2021
+Date   : Sat Nov 20 18:00:41 2021
 ****************************************
 
 Operating Conditions: ss0p95v125c   Library: saed32hvt_ss0p95v125c
 Wire Load Model Mode: enclosed
 
-  Startpoint: y[0] (input port)
-  Endpoint: p[5] (output port)
+  Startpoint: data_out_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_out[31]
+            (output port)
   Path Group: (none)
   Path Type: max
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  bitbrick           ForQA                 saed32hvt_ss0p95v125c
+  BUF_32bit          8000                  saed32hvt_ss0p95v125c
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  input external delay                     0.00       0.00 f
-  y[0] (in)                                0.00       0.00 f
-  U25/Y (NAND2X0_HVT)                      0.06       0.06 r
-  U32/Y (NAND3X0_HVT)                      0.13       0.19 f
-  U33/SO (HADDX1_HVT)                      0.18       0.37 r
-  U34/Y (NAND2X0_HVT)                      0.08       0.45 f
-  U21/Y (INVX0_HVT)                        0.06       0.52 r
-  U35/Y (NAND2X0_HVT)                      0.09       0.61 f
-  U24/Y (INVX0_HVT)                        0.05       0.65 r
-  U38/Y (NAND2X0_HVT)                      0.07       0.72 f
-  U39/Y (INVX0_HVT)                        0.03       0.76 r
-  p[5] (out)                               0.00       0.76 r
-  data arrival time                                   0.76
+  data_out_reg[31]/CLK (DFFX1_HVT)         0.00       0.00 r
+  data_out_reg[31]/Q (DFFX1_HVT)           0.19       0.19 f
+  data_out[31] (out)                       0.00       0.19 f
+  data arrival time                                   0.19
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -401,32 +382,32 @@ sh cat $final_reports_dir/${current_design}_area.txt
  
 ****************************************
 Report : area
-Design : bitbrick
+Design : BUF_32bit
 Version: N-2017.09-SP3
-Date   : Fri Nov 19 22:12:16 2021
+Date   : Sat Nov 20 18:00:41 2021
 ****************************************
 
 Library(s) Used:
 
     saed32hvt_ss0p95v125c (File: /home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
 
-Number of ports:                           14
-Number of nets:                            29
-Number of cells:                           23
-Number of combinational cells:             23
-Number of sequential cells:                 0
+Number of ports:                           66
+Number of nets:                            65
+Number of cells:                           32
+Number of combinational cells:              0
+Number of sequential cells:                32
 Number of macros/black boxes:               0
-Number of buf/inv:                          6
-Number of references:                       9
+Number of buf/inv:                          0
+Number of references:                       1
 
-Combinational area:                 45.237632
-Buf/Inv area:                        7.624320
-Noncombinational area:               0.000000
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:             211.447815
 Macro/Black Box area:                0.000000
-Net Interconnect area:               5.148574
+Net Interconnect area:              29.050733
 
-Total cell area:                    45.237632
-Total area:                         50.386206
+Total cell area:                   211.447815
+Total area:                        240.498548
 1
 report_power > $final_reports_dir/${current_design}_power.txt
 sh cat $final_reports_dir/${current_design}_power.txt
@@ -434,9 +415,9 @@ sh cat $final_reports_dir/${current_design}_power.txt
 ****************************************
 Report : power
         -analysis_effort low
-Design : bitbrick
+Design : BUF_32bit
 Version: N-2017.09-SP3
-Date   : Fri Nov 19 22:12:16 2021
+Date   : Sat Nov 20 18:00:41 2021
 ****************************************
 
 
@@ -450,7 +431,7 @@ Wire Load Model Mode: enclosed
 
 Design        Wire Load Model            Library
 ------------------------------------------------
-bitbrick               ForQA             saed32hvt_ss0p95v125c
+BUF_32bit              8000              saed32hvt_ss0p95v125c
 
 
 Global Operating Voltage = 0.95 
@@ -462,12 +443,12 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  = 753.7541 nW   (65%)
-  Net Switching Power  = 397.1182 nW   (35%)
+  Cell Internal Power  =  68.4075 uW  (100%)
+  Net Switching Power  =   2.1970 nW    (0%)
                          ---------
-Total Dynamic Power    =   1.1509 uW  (100%)
+Total Dynamic Power    =  68.4097 uW  (100%)
 
-Cell Leakage Power     = 519.2599 nW
+Cell Leakage Power     =   4.7861 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -477,12 +458,20 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register          68.4075        2.1973e-03        4.7861e+06           73.1958  ( 100.00%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      0.7538            0.3971        5.1926e+05            1.6701  ( 100.00%)
+combinational      0.0000            0.0000            0.0000            0.0000  (   0.00%)
 --------------------------------------------------------------------------------------------------
-Total              0.7538 uW         0.3971 uW     5.1926e+05 pW         1.6701 uW
+Total             68.4075 uW     2.1973e-03 uW     4.7861e+06 pW        73.1958 uW
 1
+write_file -f verilog -hier -output ./output/syn_single.v
+Error: Can't open export file '/home/espanol/RSSA_DC/bitblade/output/syn_single.v'. (EXPT-4)
+Error: Write command failed. (UID-25)
+0
+write_file -f ddc -hier -output ./output/syn_single.ddc
+Error: Unable to open DDC file './output/syn_single.ddc' for writing. (DDC-1)
+Error: Write command failed. (UID-25)
+0
 #exit
 Warning: Cannot use command line editor for terminal type 'xterm-256color'.  (UI-74)
 dc_shell> 

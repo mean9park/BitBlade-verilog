@@ -125,6 +125,15 @@ Presto compilation completed successfully.
 Elaborated 1 design.
 Current design is now 'BitBlade'.
 Information: Building the design 'BUF_32bit'. (HDL-193)
+
+Inferred memory devices in process
+	in routine BUF_32bit line 11 in file
+		'./Buffer_32bit.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_out_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
 Presto compilation completed successfully.
 Information: Building the design 'Input_MUX_REG'. (HDL-193)
 
@@ -155,6 +164,7 @@ Inferred memory devices in process
 ===============================================================================
 Presto compilation completed successfully.
 Information: Building the design 'PE'. (HDL-193)
+Warning:  ./PE.v:44: Net PE_sum connected to instance ADDER_TREE is declared as reg data type but is not driven by an always block. (VER-1004)
 Presto compilation completed successfully.
 Information: Building the design 'PE_register'. (HDL-193)
 
@@ -34748,121 +34758,115 @@ Threshold voltage group cell usage:
   Global Optimization (Phase 32)
   Global Optimization (Phase 33)
   Global Optimization (Phase 34)
-  Mapping 'BitBlade_DP_OP_16034J1_347_453_0'
-  Mapping 'BitBlade_DP_OP_15905J1_218_453_0'
-  Mapping 'BitBlade_DP_OP_15857J1_170_453_0'
+  Global Optimization (Phase 35)
   Mapping 'BitBlade_DP_OP_15889J1_202_453_0'
   Mapping 'BitBlade_DP_OP_15921J1_234_453_0'
-  Mapping 'BitBlade_DP_OP_15891J1_204_453_0'
-  Mapping 'BitBlade_DP_OP_15951J1_264_453_0'
-  Mapping 'BitBlade_DP_OP_15903J1_216_453_0'
-  Mapping 'BitBlade_DP_OP_16051J1_364_453_0'
-  Mapping 'BitBlade_DP_OP_15953J1_266_453_0'
+  Mapping 'BitBlade_DP_OP_15905J1_218_453_0'
+  Mapping 'BitBlade_DP_OP_15857J1_170_453_0'
+  Mapping 'BitBlade_DP_OP_15823J1_136_453_0'
+  Mapping 'BitBlade_DP_OP_16023J1_336_453_0'
+  Mapping 'BitBlade_DP_OP_15987J1_300_453_0'
+  Mapping 'BitBlade_DP_OP_16031J1_344_453_0'
+  Mapping 'BitBlade_DP_OP_15971J1_284_453_0'
+  Mapping 'BitBlade_DP_OP_15919J1_232_453_0'
+  Mapping 'BitBlade_DP_OP_15828J1_141_453_0'
+  Mapping 'BitBlade_DP_OP_15957J1_270_453_0'
   Mapping 'BitBlade_DP_OP_15980J1_293_453_0'
+  Mapping 'BitBlade_DP_OP_16051J1_364_453_0'
   Mapping 'BitBlade_DP_OP_15809J1_122_453_0'
-  Mapping 'BitBlade_DP_OP_15822J1_135_453_0'
+  Mapping 'BitBlade_DP_OP_15953J1_266_453_0'
   Mapping 'BitBlade_DP_OP_16049J1_362_453_0'
   Mapping 'BitBlade_DP_OP_16033J1_346_453_0'
-  Mapping 'BitBlade_DP_OP_16047J1_360_453_0'
   Mapping 'BitBlade_DP_OP_15985J1_298_453_0'
+  Mapping 'BitBlade_DP_OP_16034J1_347_453_0'
   Mapping 'BitBlade_DP_OP_16001J1_314_453_0'
-  Mapping 'BitBlade_DP_OP_15823J1_136_453_0'
-  Mapping 'BitBlade_DP_OP_15937J1_250_453_0'
+  Mapping 'BitBlade_DP_OP_15835J1_148_453_0'
   Mapping 'BitBlade_DP_OP_15824J1_137_453_0'
   Mapping 'BitBlade_DP_OP_15967J1_280_453_0'
-  Mapping 'BitBlade_DP_OP_15957J1_270_453_0'
-  Mapping 'BitBlade_DP_OP_15997J1_310_453_0'
+  Mapping 'BitBlade_DP_OP_16047J1_360_453_0'
+  Mapping 'BitBlade_DP_OP_16005J1_318_453_0'
   Mapping 'BitBlade_DP_OP_16062J1_375_453_0'
   Mapping 'BitBlade_DP_OP_15948J1_261_453_0'
-  Mapping 'BitBlade_DP_OP_16003J1_316_453_0'
-  Mapping 'BitBlade_DP_OP_15861J1_174_453_0'
-  Mapping 'BitBlade_DP_OP_16031J1_344_453_0'
-  Mapping 'BitBlade_DP_OP_15842J1_155_453_0'
+  Mapping 'BitBlade_DP_OP_16018J1_331_453_0'
+  Mapping 'BitBlade_DP_OP_15876J1_189_453_0'
+  Mapping 'BitBlade_DP_OP_15959J1_272_453_0'
+  Mapping 'BitBlade_DP_OP_15881J1_194_453_0'
+  Mapping 'BitBlade_DP_OP_15897J1_210_453_0'
+  Mapping 'BitBlade_DP_OP_15973J1_286_453_0'
   Mapping 'BitBlade_DP_OP_15955J1_268_453_0'
   Mapping 'BitBlade_DP_OP_15907J1_220_453_0'
   Mapping 'BitBlade_DP_OP_15811J1_124_453_0'
-  Mapping 'BitBlade_DP_OP_15987J1_300_453_0'
   Mapping 'BitBlade_DP_OP_15923J1_236_453_0'
-  Mapping 'BitBlade_DP_OP_15881J1_194_453_0'
-  Mapping 'BitBlade_DP_OP_15860J1_173_453_0'
-  Mapping 'BitBlade_DP_OP_15828J1_141_453_0'
-  Mapping 'BitBlade_DP_OP_15897J1_210_453_0'
   Mapping 'BitBlade_DP_OP_15908J1_221_453_0'
+  Mapping 'BitBlade_DP_OP_15860J1_173_453_0'
+  Mapping 'BitBlade_DP_OP_15861J1_174_453_0'
   Mapping 'BitBlade_DP_OP_16004J1_317_453_0'
-  Mapping 'BitBlade_DP_OP_15876J1_189_453_0'
-  Mapping 'BitBlade_DP_OP_15875J1_188_453_0'
-  Mapping 'BitBlade_DP_OP_16017J1_330_453_0'
-  Mapping 'BitBlade_DP_OP_16019J1_332_453_0'
-  Mapping 'BitBlade_DP_OP_15858J1_171_453_0'
-  Mapping 'BitBlade_DP_OP_15971J1_284_453_0'
-  Mapping 'BitBlade_DP_OP_15938J1_251_453_0'
+  Mapping 'BitBlade_DP_OP_15924J1_237_453_0'
+  Mapping 'BitBlade_DP_OP_16003J1_316_453_0'
+  Mapping 'BitBlade_DP_OP_15951J1_264_453_0'
+  Mapping 'BitBlade_DP_OP_15939J1_252_453_0'
   Mapping 'BitBlade_DP_OP_15841J1_154_453_0'
-  Mapping 'BitBlade_DP_OP_15874J1_187_453_0'
-  Mapping 'BitBlade_DP_OP_15919J1_232_453_0'
-  Mapping 'BitBlade_DP_OP_15873J1_186_453_0'
-  Mapping 'BitBlade_DP_OP_15825J1_138_453_0'
+  Mapping 'BitBlade_DP_OP_16017J1_330_453_0'
   Mapping 'BitBlade_DP_OP_15969J1_282_453_0'
-  Mapping 'BitBlade_DP_OP_16023J1_336_453_0'
-  Mapping 'BitBlade_DP_OP_16046J1_359_453_0'
-  Mapping 'BitBlade_DP_OP_15970J1_283_453_0'
-  Mapping 'BitBlade_DP_OP_16002J1_315_453_0'
-  Mapping 'BitBlade_DP_OP_15882J1_195_453_0'
-  Mapping 'BitBlade_DP_OP_16005J1_318_453_0'
-  Mapping 'BitBlade_DP_OP_15834J1_147_453_0'
-  Mapping 'BitBlade_DP_OP_15973J1_286_453_0'
-  Mapping 'BitBlade_DP_OP_15826J1_139_453_0'
-  Mapping 'BitBlade_DP_OP_15887J1_200_453_0'
+  Mapping 'BitBlade_DP_OP_15825J1_138_453_0'
+  Mapping 'BitBlade_DP_OP_15937J1_250_453_0'
+  Mapping 'BitBlade_DP_OP_15842J1_155_453_0'
+  Mapping 'BitBlade_DP_OP_15997J1_310_453_0'
+  Mapping 'BitBlade_DP_OP_16058J1_371_453_0'
+  Mapping 'BitBlade_DP_OP_15873J1_186_453_0'
+  Mapping 'BitBlade_DP_OP_15903J1_216_453_0'
+  Mapping 'BitBlade_DP_OP_15946J1_259_453_0'
   Mapping 'BitBlade_DP_OP_15962J1_275_453_0'
-  Mapping 'BitBlade_DP_OP_16015J1_328_453_0'
-  Mapping 'BitBlade_DP_OP_15839J1_152_453_0'
-  Mapping 'BitBlade_DP_OP_15935J1_248_453_0'
-  Mapping 'BitBlade_DP_OP_15855J1_168_453_0'
-  Mapping 'BitBlade_DP_OP_15871J1_184_453_0'
   Mapping 'BitBlade_DP_OP_16063J1_376_453_0'
+  Mapping 'BitBlade_DP_OP_15976J1_289_453_0'
+  Mapping 'BitBlade_DP_OP_16022J1_335_453_0'
   Mapping 'BitBlade_DP_OP_15999J1_312_453_0'
-  Mapping 'BitBlade_DP_OP_15827J1_140_453_0'
-  Mapping 'BitBlade_DP_OP_15859J1_172_453_0'
+  Mapping 'BitBlade_DP_OP_16038J1_351_453_0'
+  Mapping 'BitBlade_DP_OP_15990J1_303_453_0'
+  Mapping 'BitBlade_DP_OP_15887J1_200_453_0'
+  Mapping 'BitBlade_DP_OP_15846J1_159_453_0'
+  Mapping 'BitBlade_DP_OP_15910J1_223_453_0'
   Mapping 'BitBlade_DP_OP_15983J1_296_453_0'
-  Mapping 'BitBlade_DP_OP_16057J1_370_453_0'
-  Mapping 'BitBlade_DP_OP_15929J1_242_453_0'
-  Mapping 'BitBlade_DP_OP_15961J1_274_453_0'
-  Mapping 'BitBlade_DP_OP_15993J1_306_453_0'
-  Mapping 'BitBlade_DP_OP_15838J1_151_453_0'
-  Mapping 'BitBlade_DP_OP_15913J1_226_453_0'
+  Mapping 'BitBlade_DP_OP_15817J1_130_453_0'
+  Mapping 'BitBlade_DP_OP_15935J1_248_453_0'
+  Mapping 'BitBlade_DP_OP_15834J1_147_453_0'
   Mapping 'BitBlade_DP_OP_16056J1_369_453_0'
   Mapping 'BitBlade_DP_OP_15944J1_257_453_0'
   Mapping 'BitBlade_DP_OP_16040J1_353_453_0'
   Mapping 'BitBlade_DP_OP_16024J1_337_453_0'
-  Mapping 'BitBlade_DP_OP_15817J1_130_453_0'
-  Mapping 'BitBlade_DP_OP_15966J1_279_453_0'
-  Mapping 'BitBlade_DP_OP_15950J1_263_453_0'
-  Mapping 'BitBlade_DP_OP_16041J1_354_453_0'
+  Mapping 'BitBlade_DP_OP_15914J1_227_453_0'
   Mapping 'BitBlade_DP_OP_15912J1_225_453_0'
   Mapping 'BitBlade_DP_OP_15896J1_209_453_0'
-  Mapping 'BitBlade_DP_OP_16014J1_327_453_0'
-  Mapping 'BitBlade_DP_OP_15976J1_289_453_0'
+  Mapping 'BitBlade_DP_OP_16025J1_338_453_0'
   Mapping 'BitBlade_DP_OP_15865J1_178_453_0'
   Mapping 'BitBlade_DP_OP_15956J1_269_453_0'
   Mapping 'BitBlade_DP_OP_16052J1_365_453_0'
-  Mapping 'BitBlade_DP_OP_15835J1_148_453_0'
-  Mapping 'BitBlade_DP_OP_16025J1_338_453_0'
-  Mapping 'BitBlade_DP_OP_15877J1_190_453_0'
+  Mapping 'BitBlade_DP_OP_15891J1_204_453_0'
+  Mapping 'BitBlade_DP_OP_16019J1_332_453_0'
   Mapping 'BitBlade_DP_OP_15915J1_228_453_0'
-  Mapping 'BitBlade_DP_OP_15906J1_219_453_0'
+  Mapping 'BitBlade_DP_OP_15877J1_190_453_0'
+  Mapping 'BitBlade_DP_OP_16002J1_315_453_0'
   Mapping 'BitBlade_DP_OP_16028J1_341_453_0'
-  Mapping 'BitBlade_DP_OP_15843J1_156_453_0'
-  Mapping 'BitBlade_DP_OP_15996J1_309_453_0'
   Mapping 'BitBlade_DP_OP_16060J1_373_453_0'
-  Mapping 'BitBlade_DP_OP_15833J1_146_453_0'
+  Mapping 'BitBlade_DP_OP_16046J1_359_453_0'
+  Mapping 'BitBlade_DP_OP_15906J1_219_453_0'
   Mapping 'BitBlade_DP_OP_16044J1_357_453_0'
   Mapping 'BitBlade_DP_OP_15932J1_245_453_0'
-  Mapping 'BitBlade_DP_OP_15815J1_128_453_0'
-  Mapping 'BitBlade_DP_OP_15837J1_150_453_0'
-  Mapping 'BitBlade_DP_OP_15885J1_198_453_0'
-  Mapping 'BitBlade_DP_OP_15949J1_262_453_0'
-  Mapping 'BitBlade_DP_OP_15849J1_162_453_0'
   Mapping 'BitBlade_DP_OP_16012J1_325_453_0'
-  Mapping 'BitBlade_DP_OP_15924J1_237_453_0'
+  Mapping 'BitBlade_DP_OP_15883J1_196_453_0'
+  Mapping 'BitBlade_DP_OP_15843J1_156_453_0'
+  Mapping 'BitBlade_DP_OP_15945J1_258_453_0'
+  Mapping 'BitBlade_DP_OP_15833J1_146_453_0'
+  Mapping 'BitBlade_DP_OP_15916J1_229_453_0'
+  Mapping 'BitBlade_DP_OP_15849J1_162_453_0'
+  Mapping 'BitBlade_DP_OP_16015J1_328_453_0'
+  Mapping 'BitBlade_DP_OP_15826J1_139_453_0'
+  Mapping 'BitBlade_DP_OP_15816J1_129_453_0'
+  Mapping 'BitBlade_DP_OP_15988J1_301_453_0'
+  Mapping 'BitBlade_DP_OP_15996J1_309_453_0'
+  Mapping 'BitBlade_DP_OP_15822J1_135_453_0'
+  Mapping 'BitBlade_DP_OP_15989J1_302_453_0'
+  Mapping 'BitBlade_DP_OP_16045J1_358_453_0'
 
 Threshold voltage group cell usage:
 >> saed32cell_hvt 100.00%, saed32cell_svt 0.00%
@@ -34880,44 +34884,44 @@ Threshold voltage group cell usage:
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:10:22  486102.0      0.05       3.4     272.4                           7358991872.0000
-    0:10:24  487715.8      0.00       0.0     265.9                           7386183680.0000
-    0:10:24  487715.8      0.00       0.0     265.9                           7386183680.0000
-    0:10:25  487714.5      0.00       0.0     265.9                           7386159104.0000
+    0:10:04  543519.5      0.05       4.0     272.2                           8655669248.0000
+    0:10:06  545271.0      0.00       0.0     259.5                           8684238848.0000
+    0:10:06  545271.0      0.00       0.0     259.5                           8684238848.0000
+    0:10:06  545230.4      0.00       0.0     256.0                           8683382784.0000
 
 Threshold voltage group cell usage:
 >> saed32cell_hvt 100.00%, saed32cell_svt 0.00%
 
   Beginning WLM Backend Optimization
   --------------------------------------
-    0:11:42  487516.6      0.00       0.0     266.0                           7367546880.0000
-    0:11:46  487413.9      0.00       0.0     261.7                           7357910016.0000
-    0:12:12  487227.3      0.00       0.0     253.3                           7351614464.0000
-    0:12:20  486302.0      0.00       0.0     253.1                           7331046400.0000
-    0:12:25  483675.4      0.00       0.0     251.9                           7268954624.0000
-    0:12:28  480659.8      0.00       0.0     251.9                           7198217216.0000
-    0:12:30  478575.0      0.00       0.0     251.9                           7149983232.0000
-    0:12:32  477180.0      0.00       0.0     251.9                           7117478912.0000
-    0:12:33  476581.0      0.00       0.0     251.9                           7103497216.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
+    0:11:23  545037.5      0.00       0.0     255.5                           8664858624.0000
+    0:11:26  544941.9      0.00       0.0     250.2                           8655910912.0000
+    0:11:56  544675.1      0.00       0.0     243.0                           8648760320.0000
+    0:12:04  542795.2      0.00       0.0     243.0                           8605504512.0000
+    0:12:06  539580.8      0.00       0.0     243.0                           8531751424.0000
+    0:12:10  536772.5      0.00       0.0     243.0                           8467275776.0000
+    0:12:12  534758.1      0.00       0.0     243.0                           8419767808.0000
+    0:12:16  534063.3      0.00       0.0     242.2                           8403514880.0000
+    0:12:17  533938.8      0.00       0.0     242.2                           8400744448.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
 
 
   Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
@@ -34927,13 +34931,13 @@ Threshold voltage group cell usage:
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:12:51  476244.3      0.00       0.0     225.5                           6906794496.0000
-  Global Optimization (Phase 35)
+    0:12:36  533607.1      0.00       0.0     215.2                           8206873600.0000
   Global Optimization (Phase 36)
   Global Optimization (Phase 37)
-    0:12:58  476861.6      0.01       0.0       0.1 BitBlade_column_13/PE_reg_16/PE_sum_out_reg[8]/D 6915879936.0000
-    0:13:00  476903.5      0.00       0.0       0.0                           6915771904.0000
-    0:13:00  476903.5      0.00       0.0       0.0                           6915771904.0000
+  Global Optimization (Phase 38)
+    0:12:47  534240.9      0.00       0.0       0.1 BitBlade_column_11/PE_reg_16/PE_sum_out_reg[8]/D 8216434176.0000
+    0:12:48  534264.8      0.00       0.0       0.0                           8216138752.0000
+    0:12:48  534264.8      0.00       0.0       0.0                           8216138752.0000
 
 Threshold voltage group cell usage:
 >> saed32cell_hvt 100.00%, saed32cell_svt 0.00%
@@ -34946,8 +34950,7 @@ Threshold voltage group cell usage:
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:13:00  476903.5      0.00       0.0       0.0                           6915771904.0000
-  Global Optimization (Phase 38)
+    0:12:49  534264.8      0.00       0.0       0.0                           8216138752.0000
   Global Optimization (Phase 39)
   Global Optimization (Phase 40)
   Global Optimization (Phase 41)
@@ -34963,50 +34966,51 @@ Threshold voltage group cell usage:
   Global Optimization (Phase 51)
   Global Optimization (Phase 52)
   Global Optimization (Phase 53)
-    0:13:33  475298.8      0.06       7.1       2.9 BitBlade_column_15/PE_reg_3/PE_sum_out_reg[9]/D 6862704128.0000
-    0:13:35  475470.4      0.05       5.5       2.8                           6866838016.0000
-    0:13:42  476733.2      0.00       0.0      84.7                           6902410752.0000
-    0:13:42  476733.2      0.00       0.0      84.7                           6902410752.0000
-    0:13:51  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:13:52  476609.7      0.00       0.0      73.2                           6884261888.0000
+  Global Optimization (Phase 54)
+    0:13:22  532755.5      0.06       5.2       3.2 BitBlade_column_12/PE_reg_1/PE_sum_out_reg[8]/D 8167017472.0000
+    0:13:24  533116.6      0.04       3.4       3.1                           8177945600.0000
+    0:13:28  534155.3      0.00       0.0      97.0                           8209482752.0000
+    0:13:29  534155.3      0.00       0.0      97.0                           8209482752.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:38  534009.4      0.00       0.0      87.8                           8188835840.0000
 
                                   TOTAL                                                
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:13:57  476609.7      0.00       0.0      73.2                           6884261888.0000
-    0:14:08  475672.4      0.02       0.2      71.8                           6887642624.0000
-    0:14:09  475692.8      0.01       0.0      71.8                           6887943680.0000
-    0:14:09  475692.8      0.01       0.0      71.8                           6887943680.0000
-    0:14:18  475692.5      0.01       0.1      71.2                           6887622656.0000
-    0:14:28  475648.5      0.01       0.1      71.2                           6887068672.0000
-    0:14:31  475592.6      0.01       0.1      71.2                           6886129152.0000
-    0:14:33  475568.7      0.01       0.1      71.2                           6885825024.0000
-    0:14:38  475829.0      0.01       0.1       2.6 packed_input_14[22]       6886596608.0000
-    0:14:40  476501.2      0.01       0.2       0.3 net588845                 6893882880.0000
-    0:14:44  476777.7      0.00       0.0       0.0 BitBlade_column_15/PE_reg_16/PE_sum_out_reg[8]/D 6897804288.0000
-    0:14:45  476805.7      0.00       0.0       0.0                           6898620416.0000
-    0:14:45  476805.7      0.00       0.0       0.0                           6898620416.0000
-    0:14:45  476805.7      0.00       0.0       0.0                           6898620416.0000
-    0:14:45  476805.7      0.00       0.0       0.0                           6898620416.0000
-    0:14:55  476662.6      0.00       0.0      38.3                           6900709376.0000
+    0:13:45  534009.4      0.00       0.0      87.8                           8188835840.0000
+    0:13:55  533002.0      0.04       0.1      86.4                           8190585344.0000
+    0:13:57  533037.1      0.00       0.0      86.4                           8191183360.0000
+    0:13:57  533037.1      0.00       0.0      86.4                           8191183360.0000
+    0:14:06  533034.5      0.00       0.0      85.8                           8190706688.0000
+    0:14:15  532992.3      0.00       0.0      85.8                           8190223360.0000
+    0:14:18  532932.1      0.00       0.0      85.8                           8188775424.0000
+    0:14:20  532868.6      0.00       0.0      85.8                           8187265024.0000
+    0:14:26  533125.8      0.00       0.0       7.9 packed_input_5[13]        8188098560.0000
+    0:14:28  533782.7      0.00       0.0       5.5 packed_input_8[21]        8195219968.0000
+    0:14:31  534104.5      0.02       0.0       0.0 packed_input_5[24]        8199462400.0000
+    0:14:31  534105.5      0.00       0.0       0.0                           8199504896.0000
+    0:14:31  534105.5      0.00       0.0       0.0                           8199504896.0000
+    0:14:31  534105.5      0.00       0.0       0.0                           8199504896.0000
+    0:14:31  534105.5      0.00       0.0       0.0                           8199504896.0000
+    0:14:43  533924.3      0.00       0.0      56.0                           8202318336.0000
 Loading db file '/home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db'
 Loading db file '/home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/pll/db_nldm/saed32pll_ss0p95v125c_2p25v.db'
 Loading db file '/home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/io_std/db_nldm/saed32io_fc_ss0p95v125c_2p25v.db'
@@ -35018,7 +35022,7 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
   Optimization Complete
   ---------------------
 Warning: Design 'BitBlade' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
-     Net 'clk': 12032 load(s), 1 driver(s)
+     Net 'clk': 20736 load(s), 1 driver(s)
   Loading target library 'saed32pll_ss0p95v125c_2p25v'
   Loading target library 'saed32io_fc_ss0p95v125c_2p25v'
 Information: State dependent leakage is now switched from off to on.
@@ -35037,7 +35041,7 @@ Report : timing
         -max_paths 1
 Design : BitBlade
 Version: N-2017.09-SP3
-Date   : Wed Nov 10 13:45:11 2021
+Date   : Sat Nov 20 18:12:41 2021
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -35045,9 +35049,9 @@ Date   : Wed Nov 10 13:45:11 2021
 Operating Conditions: ss0p95v125c   Library: saed32hvt_ss0p95v125c
 Wire Load Model Mode: enclosed
 
-  Startpoint: Input_MUX_REG_3/sorted_data_reg[24]
+  Startpoint: Input_MUX_REG_12/sorted_data_reg[10]
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: BitBlade_column_4/PE_reg_13/PE_sum_out_reg[8]
+  Endpoint: BitBlade_column_2/PE_reg_6/PE_sum_out_reg[8]
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -35060,33 +35064,37 @@ Wire Load Model Mode: enclosed
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.00       0.00
-  Input_MUX_REG_3/sorted_data_reg[24]/CLK (DFFX1_HVT)     0.00 #     0.00 r
-  Input_MUX_REG_3/sorted_data_reg[24]/Q (DFFX1_HVT)       0.20       0.20 r
-  U124256/Y (NAND2X2_HVT)                                 0.16       0.37 f
-  U162640/Y (INVX2_HVT)                                   0.09       0.46 r
-  U125372/Y (NAND2X0_HVT)                                 0.22       0.68 f
-  U245681/Y (OR2X1_HVT)                                   0.15       0.83 f
-  U245682/Y (AND2X1_HVT)                                  0.08       0.91 f
-  U245689/Y (NAND2X0_HVT)                                 0.05       0.96 r
-  U245705/Y (OA21X1_HVT)                                  0.10       1.07 r
-  U245753/CO (FADDX1_HVT)                                 0.14       1.21 r
-  U245754/S (FADDX1_HVT)                                  0.24       1.46 f
-  U245819/S (FADDX1_HVT)                                  0.20       1.65 r
-  U245835/S (FADDX1_HVT)                                  0.22       1.87 f
-  U245849/S (FADDX1_HVT)                                  0.21       2.08 r
-  U245863/CO (FADDX1_HVT)                                 0.15       2.23 r
-  U245865/CO (FADDX1_HVT)                                 0.14       2.37 r
-  U245867/CO (FADDX1_HVT)                                 0.14       2.51 r
-  U245869/CO (FADDX1_HVT)                                 0.14       2.66 r
-  U245861/S (FADDX1_HVT)                                  0.21       2.86 f
-  U245862/Y (AND2X1_HVT)                                  0.07       2.94 f
-  BitBlade_column_4/PE_reg_13/PE_sum_out_reg[8]/D (DFFX1_HVT)
+  Input_MUX_REG_12/sorted_data_reg[10]/CLK (DFFX1_HVT)
+                                                          0.00 #     0.00 r
+  Input_MUX_REG_12/sorted_data_reg[10]/Q (DFFX1_HVT)      0.20       0.20 f
+  U118392/Y (INVX0_HVT)                                   0.04       0.24 r
+  U118393/Y (INVX0_HVT)                                   0.06       0.31 f
+  U123438/Y (NBUFFX4_HVT)                                 0.12       0.42 f
+  U236975/Y (NAND2X0_HVT)                                 0.08       0.50 r
+  U236976/Y (NAND3X0_HVT)                                 0.11       0.61 f
+  U236977/Y (MUX21X1_HVT)                                 0.16       0.77 f
+  U236979/Y (NAND2X0_HVT)                                 0.07       0.84 r
+  U236980/Y (INVX0_HVT)                                   0.05       0.89 f
+  U236981/Y (NAND2X0_HVT)                                 0.06       0.95 r
+  U237143/Y (OA21X1_HVT)                                  0.11       1.06 r
+  U237194/CO (FADDX1_HVT)                                 0.14       1.21 r
+  U237192/S (FADDX1_HVT)                                  0.22       1.42 f
+  U237252/S (FADDX1_HVT)                                  0.21       1.63 r
+  U237277/S (FADDX1_HVT)                                  0.24       1.87 f
+  U237292/S (FADDX1_HVT)                                  0.21       2.08 r
+  U237306/CO (FADDX1_HVT)                                 0.15       2.23 r
+  U237308/CO (FADDX1_HVT)                                 0.14       2.37 r
+  U237310/CO (FADDX1_HVT)                                 0.14       2.51 r
+  U237312/CO (FADDX1_HVT)                                 0.14       2.66 r
+  U237304/S (FADDX1_HVT)                                  0.21       2.86 f
+  U237305/Y (AND2X1_HVT)                                  0.07       2.94 f
+  BitBlade_column_2/PE_reg_6/PE_sum_out_reg[8]/D (DFFX1_HVT)
                                                           0.00       2.94 f
   data arrival time                                                  2.94
 
   clock clk (rise edge)                                   3.00       3.00
   clock network delay (ideal)                             0.00       3.00
-  BitBlade_column_4/PE_reg_13/PE_sum_out_reg[8]/CLK (DFFX1_HVT)
+  BitBlade_column_2/PE_reg_6/PE_sum_out_reg[8]/CLK (DFFX1_HVT)
                                                           0.00       3.00 r
   library setup time                                     -0.06       2.94
   data required time                                                 2.94
@@ -35106,7 +35114,7 @@ sh cat $final_reports_dir/area.txt
 Report : area
 Design : BitBlade
 Version: N-2017.09-SP3
-Date   : Wed Nov 10 13:45:11 2021
+Date   : Sat Nov 20 18:12:41 2021
 ****************************************
 
 Library(s) Used:
@@ -35114,22 +35122,22 @@ Library(s) Used:
     saed32hvt_ss0p95v125c (File: /home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
 
 Number of ports:                         9232
-Number of nets:                        203416
-Number of cells:                       164795
-Number of combinational cells:         152761
-Number of sequential cells:             12034
+Number of nets:                        211881
+Number of cells:                       173253
+Number of combinational cells:         152517
+Number of sequential cells:             20736
 Number of macros/black boxes:               0
-Number of buf/inv:                      15630
-Number of references:                      48
+Number of buf/inv:                      15501
+Number of references:                      52
 
-Combinational area:             397090.341138
-Buf/Inv area:                    21333.355837
-Noncombinational area:           79572.234853
+Combinational area:             396810.782731
+Buf/Inv area:                    21205.775543
+Noncombinational area:          137113.488067
 Macro/Black Box area:                0.000000
-Net Interconnect area:          324706.039686
+Net Interconnect area:          359815.474726
 
-Total cell area:                476662.575991
-Total area:                     801368.615677
+Total cell area:                533924.270798
+Total area:                     893739.745524
 1
 report_power > $final_reports_dir/power.txt
 sh cat $final_reports_dir/power.txt
@@ -35139,7 +35147,7 @@ Report : power
         -analysis_effort low
 Design : BitBlade
 Version: N-2017.09-SP3
-Date   : Wed Nov 10 13:45:11 2021
+Date   : Sat Nov 20 18:12:41 2021
 ****************************************
 
 
@@ -35165,12 +35173,12 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  =  39.9567 mW   (87%)
-  Net Switching Power  =   5.9263 mW   (13%)
+  Cell Internal Power  =  59.6889 mW   (91%)
+  Net Switching Power  =   6.2015 mW    (9%)
                          ---------
-Total Dynamic Power    =  45.8830 mW  (100%)
+Total Dynamic Power    =  65.8903 mW  (100%)
 
-Cell Leakage Power     =   6.6877 mW
+Cell Leakage Power     =   7.9935 mW
 
 
                  Internal         Switching           Leakage            Total
@@ -35180,14 +35188,14 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register       2.6425e+04          638.6281        1.7427e+09        2.8806e+04  (  54.80%)
+register       4.6027e+04          852.8713        3.0476e+09        4.9927e+04  (  67.58%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational  1.3532e+04        5.2877e+03        4.9450e+09        2.3764e+04  (  45.20%)
+combinational  1.3662e+04        5.3486e+03        4.9459e+09        2.3956e+04  (  32.42%)
 --------------------------------------------------------------------------------------------------
-Total          3.9957e+04 uW     5.9263e+03 uW     6.6877e+09 pW     5.2571e+04 uW
+Total          5.9689e+04 uW     6.2015e+03 uW     7.9935e+09 pW     7.3883e+04 uW
 1
-write_file -f verilog -hier -output ./output/syn.c
-Error: Can't open export file '/home/espanol/RSSA_DC/bitblade/output/syn.c'. (EXPT-4)
+write_file -f verilog -hier -output ./output/syn.v
+Error: Can't open export file '/home/espanol/RSSA_DC/bitblade/output/syn.v'. (EXPT-4)
 Error: Write command failed. (UID-25)
 0
 write_file -f ddc -hier -output ./output/syn.ddc

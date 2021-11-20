@@ -21,12 +21,12 @@ sh rm -rf ./WORK
 define_design_lib WORK -path WORK
 
 set SOURCE_FILES {
-    ./signed3bit_MUL.v
-    ./HA.v
-    ./FA.v
-    ./bitbrick.v
+    ./Buffer_32bit.v
 }
-
+    # ./bitbrick.v
+    # ./signed3bit_MUL.v
+    # ./HA.v
+    # ./FA.v
     # ./PE.v
     # ./PE_register.v
     # ./PE_shift.v
@@ -34,7 +34,6 @@ set SOURCE_FILES {
 
     # ./MUL3b3b.v
     # ./MUL2b2b.v
-    # ./Buffer_32bit.v
     # ./BitBlade_column.v
     # ./ACC_Shift.v
     # ./ACC_register.v
@@ -43,7 +42,7 @@ set SOURCE_FILES {
     # ./Weight_MUX_REG.v
 
 analyze -format verilog $SOURCE_FILES -library WORK
-elaborate bitbrick
+elaborate BUF_32bit 
 
 set reports_dir reports
 set final_reports_dir final_reports
@@ -61,7 +60,7 @@ if { ! [ file exists $design_dir] } {
 
 # set_dont_touch (get_designs MUL2b2b)
 # set_dont_touch (get_designs signed_3bit_MUL)
-set_dont_touch (get_designs bitbrick)
+# set_dont_touch (get_designs bitbrick)
 # set current_design MUL3b3b
 # link
 
@@ -72,6 +71,10 @@ ungroup -all -flatten
 compile_ultra
 #compile
 
+report_design > $design_dir/design_single
+
+report_synthetic > $reports_dir/synthetic_single
+
 report_timing > $final_reports_dir/${current_design}_timing.txt
 sh cat $final_reports_dir/${current_design}_timing.txt
 
@@ -80,5 +83,8 @@ sh cat $final_reports_dir/${current_design}_area.txt
 
 report_power > $final_reports_dir/${current_design}_power.txt
 sh cat $final_reports_dir/${current_design}_power.txt
+
+write_file -f verilog -hier -output ./output/syn_single.v
+write_file -f ddc -hier -output ./output/syn_single.ddc
 
 #exit
