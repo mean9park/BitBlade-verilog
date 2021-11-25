@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : BitBlade
 Version: N-2017.09-SP3
-Date   : Sat Nov 20 18:12:41 2021
+Date   : Sun Nov 21 12:51:20 2021
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -14,60 +14,81 @@ Date   : Sat Nov 20 18:12:41 2021
 Operating Conditions: ss0p95v125c   Library: saed32hvt_ss0p95v125c
 Wire Load Model Mode: enclosed
 
-  Startpoint: Input_MUX_REG_12/sorted_data_reg[10]
+  Startpoint: Input_MUX_REG_10/sorted_data_reg[8]
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: BitBlade_column_2/PE_reg_6/PE_sum_out_reg[8]
+  Endpoint: BitBlade_column_4/PE_reg_5/PE_sum_out_reg[8]
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  BitBlade           540000                saed32hvt_ss0p95v125c
+  BitBlade           1000000               saed32hvt_ss0p95v125c
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
-  clock clk (rise edge)                                   0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  Input_MUX_REG_12/sorted_data_reg[10]/CLK (DFFX1_HVT)
-                                                          0.00 #     0.00 r
-  Input_MUX_REG_12/sorted_data_reg[10]/Q (DFFX1_HVT)      0.20       0.20 f
-  U118392/Y (INVX0_HVT)                                   0.04       0.24 r
-  U118393/Y (INVX0_HVT)                                   0.06       0.31 f
-  U123438/Y (NBUFFX4_HVT)                                 0.12       0.42 f
-  U236975/Y (NAND2X0_HVT)                                 0.08       0.50 r
-  U236976/Y (NAND3X0_HVT)                                 0.11       0.61 f
-  U236977/Y (MUX21X1_HVT)                                 0.16       0.77 f
-  U236979/Y (NAND2X0_HVT)                                 0.07       0.84 r
-  U236980/Y (INVX0_HVT)                                   0.05       0.89 f
-  U236981/Y (NAND2X0_HVT)                                 0.06       0.95 r
-  U237143/Y (OA21X1_HVT)                                  0.11       1.06 r
-  U237194/CO (FADDX1_HVT)                                 0.14       1.21 r
-  U237192/S (FADDX1_HVT)                                  0.22       1.42 f
-  U237252/S (FADDX1_HVT)                                  0.21       1.63 r
-  U237277/S (FADDX1_HVT)                                  0.24       1.87 f
-  U237292/S (FADDX1_HVT)                                  0.21       2.08 r
-  U237306/CO (FADDX1_HVT)                                 0.15       2.23 r
-  U237308/CO (FADDX1_HVT)                                 0.14       2.37 r
-  U237310/CO (FADDX1_HVT)                                 0.14       2.51 r
-  U237312/CO (FADDX1_HVT)                                 0.14       2.66 r
-  U237304/S (FADDX1_HVT)                                  0.21       2.86 f
-  U237305/Y (AND2X1_HVT)                                  0.07       2.94 f
-  BitBlade_column_2/PE_reg_6/PE_sum_out_reg[8]/D (DFFX1_HVT)
-                                                          0.00       2.94 f
-  data arrival time                                                  2.94
+  clock clk (rise edge)                               0.000000000000
+                                                                 0.000000000000
+  clock network delay (ideal)                         0.000000000000
+                                                                 0.000000000000
+  Input_MUX_REG_10/sorted_data_reg[8]/CLK (DFFX1_HVT) 0.000000000000 #
+                                                                 0.000000000000 r
+  Input_MUX_REG_10/sorted_data_reg[8]/Q (DFFX1_HVT)   0.231189832091
+                                                                 0.231189832091 f
+  U118324/Y (AND2X2_HVT)                              0.159732416272
+                                                                 0.390922248363 f
+  U116926/Y (NAND2X1_HVT)                             0.176318824291
+                                                                 0.567241072655 r
+  U125313/Y (INVX0_HVT)                               0.064888656139
+                                                                 0.632129728794 f
+  U144701/Y (AND2X1_HVT)                              0.078420519829
+                                                                 0.710550248623 f
+  U144702/Y (OA22X1_HVT)                              0.091100990772
+                                                                 0.801651239395 f
+  U144900/Y (INVX0_HVT)                               0.034746348858
+                                                                 0.836397588253 r
+  U134399/Y (NAND3X0_HVT)                             0.147387802601
+                                                                 0.983785390854 f
+  U144902/S (FADDX1_HVT)                              0.254659891129
+                                                                 1.238445281982 r
+  U144955/CO (FADDX1_HVT)                             0.156785607338
+                                                                 1.395230889320 r
+  U144928/S (FADDX1_HVT)                              0.239376783371
+                                                                 1.634607672691 f
+  U144991/CO (FADDX1_HVT)                             0.124635457993
+                                                                 1.759243130684 f
+  U144972/Y (XOR3X2_HVT)                              0.231476306915
+                                                                 1.990719437599 r
+  U144973/Y (NOR2X0_HVT)                              0.121240019798
+                                                                 2.111959457397 f
+  U132021/Y (OR2X1_HVT)                               0.065219402313
+                                                                 2.177178859711 f
+  U123132/Y (OA21X1_HVT)                              0.101317882538
+                                                                 2.278496742249 f
+  U132019/Y (XOR2X2_HVT)                              0.132917165756
+                                                                 2.411413908005 r
+  U132018/Y (AND2X1_HVT)                              0.073042392731
+                                                                 2.484456300735 r
+  BitBlade_column_4/PE_reg_5/PE_sum_out_reg[8]/D (DFFX1_HVT)
+                                                      0.000000000000
+                                                                 2.484456300735 r
+  data arrival time                                              2.484456300735
 
-  clock clk (rise edge)                                   3.00       3.00
-  clock network delay (ideal)                             0.00       3.00
-  BitBlade_column_2/PE_reg_6/PE_sum_out_reg[8]/CLK (DFFX1_HVT)
-                                                          0.00       3.00 r
-  library setup time                                     -0.06       2.94
-  data required time                                                 2.94
+  clock clk (rise edge)                               2.569999933243
+                                                                 2.569999933243
+  clock network delay (ideal)                         0.000000000000
+                                                                 2.569999933243
+  BitBlade_column_4/PE_reg_5/PE_sum_out_reg[8]/CLK (DFFX1_HVT)
+                                                      0.000000000000
+                                                                 2.569999933243 r
+  library setup time                                  -0.085521146655
+                                                                 2.484478712082
+  data required time                                             2.484478712082
   --------------------------------------------------------------------------
-  data required time                                                 2.94
-  data arrival time                                                 -2.94
+  data required time                                             2.484478712082
+  data arrival time                                              -2.484456300735
   --------------------------------------------------------------------------
-  slack (MET)                                                        0.00
+  slack (MET)                                                    0.000022411346
 
 
 1

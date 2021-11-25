@@ -3,28 +3,28 @@
 Report : area
 Design : PE_register
 Version: N-2017.09-SP3
-Date   : Thu Oct 21 15:58:58 2021
+Date   : Sat Nov 20 18:52:02 2021
 ****************************************
 
 Library(s) Used:
 
-    saed32hvt_ss0p95v125c (File: /home/espanol/libraries/SAED32_EDK_01132015/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
+    saed32hvt_ss0p95v125c (File: /home/espanol/libraries/PDKS/SAED32_EDK_12162019/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
 
-Number of ports:                           18
-Number of nets:                            27
-Number of cells:                           17
-Number of combinational cells:              9
-Number of sequential cells:                 8
+Number of ports:                           22
+Number of nets:                            33
+Number of cells:                           21
+Number of combinational cells:             11
+Number of sequential cells:                10
 Number of macros/black boxes:               0
 Number of buf/inv:                          1
 Number of references:                       3
 
-Combinational area:                 17.535937
-Buf/Inv area:                        1.270720
-Noncombinational area:              52.861954
+Combinational area:                 21.856385
+Buf/Inv area:                        1.524864
+Noncombinational area:              66.077442
 Macro/Black Box area:                0.000000
-Net Interconnect area:               3.974225
+Net Interconnect area:               5.127101
 
-Total cell area:                    70.397891
-Total area:                         74.372116
+Total cell area:                    87.933827
+Total area:                         93.060928
 1

@@ -65,7 +65,7 @@ set_dont_touch (get_designs bitbrick)
 # set current_design top
 # link
 
-create_clock clk -period 3
+create_clock clk -period 2.57
 
 ungroup -all -flatten
 
@@ -75,6 +75,8 @@ compile_ultra
 report_design > $design_dir/design
 
 report_synthetic > $reports_dir/synthetic
+
+set_app_var report_default_significant_digits 12
 
 report_timing > $final_reports_dir/timing.txt
 sh cat $final_reports_dir/timing.txt

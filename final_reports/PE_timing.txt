@@ -1,4 +1,3 @@
-Information: Updating design information... (UID-85)
  
 ****************************************
 Report : timing
@@ -7,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : PE
 Version: N-2017.09-SP3
-Date   : Fri Nov 19 21:54:11 2021
+Date   : Sat Nov 20 21:30:45 2021
 ****************************************
 
 Operating Conditions: ss0p95v125c   Library: saed32hvt_ss0p95v125c

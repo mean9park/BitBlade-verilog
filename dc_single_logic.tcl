@@ -21,28 +21,31 @@ sh rm -rf ./WORK
 define_design_lib WORK -path WORK
 
 set SOURCE_FILES {
-    ./Buffer_32bit.v
+    ./PE_adder.v
 }
     # ./bitbrick.v
     # ./signed3bit_MUL.v
     # ./HA.v
     # ./FA.v
     # ./PE.v
-    # ./PE_register.v
+    # ./accumulator.v
     # ./PE_shift.v
-    # ./PE_adder.v
+    # ./ACC_register.v
+    # ./PE_register.v
+    # ./Weight_MUX_REG.v
+    # ./Input_MUX_REG.v
+    # ./Input_wire_packing.v
+    # ./Buffer_32bit.v
+    # ./PE_shift.v
 
     # ./MUL3b3b.v
     # ./MUL2b2b.v
     # ./BitBlade_column.v
     # ./ACC_Shift.v
-    # ./ACC_register.v
-    # ./accumulator.v
     # ./Weight_wire_packing.v
-    # ./Weight_MUX_REG.v
 
 analyze -format verilog $SOURCE_FILES -library WORK
-elaborate BUF_32bit 
+elaborate PE_adder
 
 set reports_dir reports
 set final_reports_dir final_reports
@@ -59,17 +62,20 @@ if { ! [ file exists $design_dir] } {
 }
 
 # set_dont_touch (get_designs MUL2b2b)
-# set_dont_touch (get_designs signed_3bit_MUL)
-# set_dont_touch (get_designs bitbrick)
+# set_dont_touch [get_designs signed_3bit_MUL]
+# set_dont_touch [get_designs bitbrick]
 # set current_design MUL3b3b
 # link
 
 create_clock clk -period 3
 
+# set current_design signed_3bit_MUL
 ungroup -all -flatten
 
+# set current_design bitbrick
 compile_ultra
 #compile
+
 
 report_design > $design_dir/design_single
 
@@ -84,7 +90,7 @@ sh cat $final_reports_dir/${current_design}_area.txt
 report_power > $final_reports_dir/${current_design}_power.txt
 sh cat $final_reports_dir/${current_design}_power.txt
 
-write_file -f verilog -hier -output ./output/syn_single.v
-write_file -f ddc -hier -output ./output/syn_single.ddc
+# write_file -f verilog -hier -output ./output/syn_single.v
+# write_file -f ddc -hier -output ./output/syn_single.ddc
 
 #exit

@@ -4,7 +4,7 @@ Report : power
         -analysis_effort low
 Design : BitBlade
 Version: N-2017.09-SP3
-Date   : Sat Nov 20 18:12:41 2021
+Date   : Sun Nov 21 12:51:20 2021
 ****************************************
 
 
@@ -18,7 +18,7 @@ Wire Load Model Mode: enclosed
 
 Design        Wire Load Model            Library
 ------------------------------------------------
-BitBlade               540000            saed32hvt_ss0p95v125c
+BitBlade               1000000           saed32hvt_ss0p95v125c
 
 
 Global Operating Voltage = 0.95 
@@ -30,24 +30,31 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  =  59.6889 mW   (91%)
-  Net Switching Power  =   6.2015 mW    (9%)
+  Cell Internal Power  = 69.864692687988 mW   (91%)
+  Net Switching Power  = 7.015372753143 mW    (9%)
                          ---------
-Total Dynamic Power    =  65.8903 mW  (100%)
+Total Dynamic Power    = 76.880073547363 mW  (100%)
 
-Cell Leakage Power     =   7.9935 mW
+Cell Leakage Power     =   8.1289 mW
 
 
                  Internal         Switching           Leakage            Total
 Power Group      Power            Power               Power              Power   (   %    )  Attrs
 --------------------------------------------------------------------------------------------------
-io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
-memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
-black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register       4.6027e+04          852.8713        3.0476e+09        4.9927e+04  (  67.58%)
-sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational  1.3662e+04        5.3486e+03        4.9459e+09        2.3956e+04  (  32.42%)
+io_pad         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+                                                                                 (   0.00%)
+memory         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+                                                                                 (   0.00%)
+black_box      0.000000000000        0.000000000000        0.000000000000        0.000000000000
+                                                                                 (   0.00%)
+clock_network  0.000000000000        0.000000000000        0.000000000000        0.000000000000
+                                                                                 (   0.00%)
+register       5.406581250000e+04        1.150023925781e+03        3.056993280000e+09        5.827293750000e+04
+                                                                                 (  68.55%)
+sequential     0.000000000000        0.000000000000        0.000000000000        0.000000000000
+                                                                                 (   0.00%)
+combinational  1.579900683594e+04        5.865280273438e+03        5.071899136000e+09        2.673609179688e+04
+                                                                                 (  31.45%)
 --------------------------------------------------------------------------------------------------
-Total          5.9689e+04 uW     6.2015e+03 uW     7.9935e+09 pW     7.3883e+04 uW
+Total          6.986482031250e+04 uW     7.015304199219e+03 uW     8.128892416000e+09 pW     8.500903125000e+04 uW
 1
